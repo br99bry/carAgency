@@ -1,0 +1,58 @@
+@import '../../assets/styles/mixins.scss';
+@import '../../assets/styles/vars.scss';
+
+.Navbar{
+  // @include border();
+  width: 100vw;
+  height: 130px;
+  @include flexbox-basic(flex-end);
+  position: fixed;
+  z-index: 1;
+}
+
+.NavbarWrapper{
+  // @include border(blue);
+  width: 80%;
+  height: 100%;
+  @include flexbox-basic(space-around,
+  flex-end);
+  & .NavbarWrapper__burgerMenu{
+    // @include border(green);
+    width: 50px;
+    height: 50px;
+    @include flexbox-basic();
+    & svg{
+      font-size: 2rem;
+      color: white;
+    }
+  }
+
+  & .NavbarWrapper__options{
+    // @include border(black);
+    & ul{
+      // @include border();
+      list-style: none;
+      padding: 0;
+      @include flexbox-basic();
+      padding: 15px 10px;
+      margin: 0;
+      & li{
+        margin-right: 25px;
+        & a{
+          color: white;
+          text-decoration: none;
+          font-weight: bold;
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+  & .NavbarWrapper__contactButton{
+    @include border(white);
+    padding: 15px 30px;
+    & p{
+      margin: 0;
+      color: white;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@import '../../assets/styles/mixins.scss';
+@import '../../assets/styles/vars.scss';
+
+.Home{
+  // @include border(blue);
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 20vw 80vw;
+  grid-template-rows: 100vh;
+  background: rgb(0, 0, 0);
+
+  & .Home__dark{
+    // @include border();
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: black;
+  }
+
+  & .Home__hero{
+    // @include border();
+    grid-column: 2/3;
+    grid-row: 1/2;
+    & .Home__hero-logo,
+    & .Home__hero-logo img
+    {
+      width: 100%;
+      height: 100%;
+      filter: opacity(90%);
+      object-fit: cover;
+    }
+  }
+}
