@@ -37,7 +37,7 @@
       & > h1{
         // @include border(red);
         color: white;
-        font-size: 4rem;
+        font-size: 3rem;
         margin: 0;
         letter-spacing: 5px;
         margin-bottom: 50px;
@@ -69,29 +69,11 @@
     // @include border();
     grid-column: 2/3;
     grid-row: 1/2;
-    position: relative;
-    & .Home__hero-background,
-    & .Home__hero-background img{
+    & .Home__hero-carrousel{
+      // @include border(blue);
       width: 100%;
       height: 100%;
-      filter: opacity(90%);
-      object-fit: cover;
-    }
-    & .Home__hero-arows{
-      @include border(white);
-      position: absolute;
-      z-index: 3;
-      width: 200px;
-      height: 100px;
-      bottom: 5%;
-      left: 5%;
-      @include flexbox-basic();
-      & span{
-        border: 1px solid red;
-        color: white;
-        padding: 0px 20px;
-        font-size: 1.3rem;
-      }
+      background-color: red;
     }
   }
 }
