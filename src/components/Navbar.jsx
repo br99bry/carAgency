@@ -1,9 +1,10 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import './styles/Navbar.scss';
 import { AiOutlineMenu } from 'react-icons/ai';
 
-const Navbar = () =>{
+const Navbar = ( {navbar} ) =>{
 
   return (
     <>
@@ -14,14 +15,14 @@ const Navbar = () =>{
           </div>
           <div className="NavbarWrapper__options">
             <ul>
-              <li> <Link to="/"> Inicio   </Link> </li>
-              <li> <Link to="/"> Nosotros </Link> </li>
-              <li> <Link to="/"> Servicios</Link> </li>
-              <li> <Link to="/"> Contacto </Link> </li>
+              <li> <Link to="/"> {navbar.links[0]}  </Link> </li>
+              <li> <Link to="/"> {navbar.links[1]} </Link> </li>
+              <li> <Link to="/"> {navbar.links[2]} </Link> </li>
+              <li> <Link to="/"> {navbar.links[3]} </Link> </li>
             </ul>
           </div>
           <div className="NavbarWrapper__contactButton">
-            <p>Escribenos</p>
+            <p> {navbar.links[4]} </p>
           </div>
         </div>
       </div>
@@ -30,4 +31,10 @@ const Navbar = () =>{
 
 }
 
-export default Navbar;
+const mapStateToProps = state =>{
+  return {
+    navbar: state.navbar,
+  }
+}
+
+export default connect(mapStateToProps,null)(Navbar)

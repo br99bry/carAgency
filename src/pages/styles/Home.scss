@@ -7,7 +7,7 @@
   display: grid;
   grid-template-columns: 20vw 80vw;
   grid-template-rows: 100vh;
-  background: rgb(0, 0, 0);
+  background: rgb(195, 178, 178);
 
   & .Home__dark{
     // @include border();
@@ -73,7 +73,9 @@
       // @include border(blue);
       width: 100%;
       height: 100%;
-      background-color: red;
+      background-color: rgb(141, 133, 133);
+      overflow-y: hidden;
+      overflow-x: scroll;
     }
   }
 }
