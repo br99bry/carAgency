@@ -4,17 +4,27 @@ import './styles/Home.scss';
 
 import CarrouselHome from '../components/CarruselHome';
 
-const Home = ( {home} ) => {
+const Home = ( {home, images} ) => {
 
   const carrusel = useRef();
 
   const movRight = (e) => {
-    carrusel.current.scrollLeft += carrusel.current.offsetWidth;
-    console.log(carrusel)
+    let validar = carrusel.current.scrollLeft + carrusel.current.offsetWidth + 10 ;
+    if(validar  < carrusel.current.scrollWidth){
+      carrusel.current.scrollLeft += carrusel.current.offsetWidth;
+      console.log(validar)
+    }else{
+      carrusel.current.scrollLeft = 0;
+    }
   }
 
   const movLeft = (e) => {
-    carrusel.current.scrollLeft -= carrusel.current.offsetWidth;
+    let validar = carrusel.current.scrollLeft - carrusel.current.offsetWidth ;
+    if(validar  > 0){
+      carrusel.current.scrollLeft -= carrusel.current.offsetWidth;
+    }else{
+      carrusel.current.scrollLeft = (carrusel.current.scrollWidth-carrusel.current.offsetWidth)
+    }
   }
 
   return(
@@ -48,6 +58,7 @@ const Home = ( {home} ) => {
 const mapStateToProps = state => {
   return {
     home: state.home,
+    images: state.home.carrousel.img,
   }
 }
 
