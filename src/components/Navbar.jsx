@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import './styles/Navbar.scss';
 import { AiOutlineMenu } from 'react-icons/ai';
+import menu from '../assets/img/menu.png';
 
 const Navbar = ( {navbar} ) =>{
 
@@ -11,7 +12,8 @@ const Navbar = ( {navbar} ) =>{
       <div className="Navbar">
         <div className="NavbarWrapper">
           <div className="NavbarWrapper__burgerMenu">
-            <AiOutlineMenu/>
+            <img src={menu} alt="burger menu"/>
+            {/* <AiOutlineMenu/> */}
           </div>
           <div className="NavbarWrapper__options">
             <ul>

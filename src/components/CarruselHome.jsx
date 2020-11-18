@@ -2,8 +2,8 @@ import React, {useState, useRef} from 'react';
 import { connect } from 'react-redux';
 import './styles/CarrouselHome.scss';
 
-import { FaArrowRight } from "react-icons/fa";
-import { FaArrowLeft } from "react-icons/fa";
+import leftArrow from '../assets/img/left-arrow.png';
+import rightArrow from '../assets/img/right-arrow.png';
 
 const CarrouselHome = ( {images, movR, movL} ) => {
 
@@ -40,7 +40,7 @@ const CarrouselHome = ( {images, movR, movL} ) => {
       selectDot.children[dot].style.height='4px';
       selectDot.children[2].style.backgroundColor='red';
       selectDot.children[2].style.height='6px';
-      setDot(0);
+      setDot(2);
     }
   }
 
@@ -53,10 +53,10 @@ const CarrouselHome = ( {images, movR, movL} ) => {
       }
       <div className="CarrouselHome__arrow">
         <span onClick={ (e) => (movL(e)) }  >
-        <FaArrowLeft onClick={ () => ( handleDotL() ) }/>
+          <img alt="flecha izquierda" onClick={ () => ( handleDotL() ) } src={leftArrow} />
         </span>
         <span onClick={ (e) => (movR(e)) }>
-        <FaArrowRight onClick={ () => ( handleDotR() ) } />
+          <img alt="flecha derecha" onClick={ () => (handleDotR() ) } src={rightArrow} />
         </span>
       </div>
       <div className="CarrouselHome__dots" ref={dotContainer} >

@@ -12,7 +12,6 @@ const Home = ( {home, images} ) => {
     let validar = carrusel.current.scrollLeft + carrusel.current.offsetWidth + 10 ;
     if(validar  < carrusel.current.scrollWidth){
       carrusel.current.scrollLeft += carrusel.current.offsetWidth;
-      console.log(validar)
     }else{
       carrusel.current.scrollLeft = 0;
     }
@@ -20,7 +19,7 @@ const Home = ( {home, images} ) => {
 
   const movLeft = (e) => {
     let validar = carrusel.current.scrollLeft - carrusel.current.offsetWidth ;
-    if(validar  > 0){
+    if(validar  >= 0){
       carrusel.current.scrollLeft -= carrusel.current.offsetWidth;
     }else{
       carrusel.current.scrollLeft = (carrusel.current.scrollWidth-carrusel.current.offsetWidth)
