@@ -5,21 +5,20 @@ import './styles/CarrouselHome.scss';
 import { FaArrowRight } from "react-icons/fa";
 import { FaArrowLeft } from "react-icons/fa";
 
-const CarrouselHome = ( {images} ) => {
-  const movR = () => {
-  }
+const CarrouselHome = ( {images, movR, movL} ) => {
+  
   return (
     <div className="CarrouselHome">
       {
         images.map(img => (
-          <img key={img.id} src={img.src} alt="img home"/>
+          <img className="CarrouselHome__bg" key={img.id} src={img.src} alt="img home"/>
         ))
       }
       <div className="CarrouselHome__arrow">
-        <span>
+        <span onClick={ (e) => (movL(e)) }  >
         <FaArrowLeft/>
         </span>
-        <span onClick={ () => (movR) }>
+        <span onClick={ (e) => (movR(e)) }>
         <FaArrowRight  />
         </span>
       </div>

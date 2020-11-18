@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { connect } from 'react-redux';
 import './styles/Home.scss';
 
@@ -6,6 +6,16 @@ import CarrouselHome from '../components/CarruselHome';
 
 const Home = ( {home} ) => {
 
+  const carrusel = useRef();
+
+  const movRight = (e) => {
+    carrusel.current.scrollLeft += carrusel.current.offsetWidth;
+    console.log(carrusel)
+  }
+
+  const movLeft = (e) => {
+    carrusel.current.scrollLeft -= carrusel.current.offsetWidth;
+  }
 
   return(
     <>
@@ -23,8 +33,11 @@ const Home = ( {home} ) => {
           </div>
         </div>
         <div className="Home__hero">
-          <div className="Home__hero-carrousel">
-            <CarrouselHome />
+          <div className="Home__hero-carrousel" ref={carrusel} >
+            <CarrouselHome 
+            movR={movRight}
+            movL={movLeft}
+            />
           </div>
         </div>
       </section>
