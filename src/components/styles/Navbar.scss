@@ -4,7 +4,7 @@
 .Navbar{
   // @include border();
   width: 100vw;
-  height: 130px;
+  height: 90px;
   @include flexbox-basic(flex-end);
   position: fixed;
   z-index: 1;

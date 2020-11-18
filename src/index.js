@@ -7,7 +7,6 @@ import reducer from './reducers';
 import App from './App.jsx';
 
 import logoHome from './assets/img/fondoHome.png';
-import video from './assets/videos/video.mp4';
 import carHome1 from './assets/img/carHome1.jpg';
 
 const initialState = {
@@ -19,9 +18,11 @@ const initialState = {
     homeDarkTitle: [ 'H & PERFORMANCE', 'SMART WORKSHOP' ],
     homeDarkOptions: [ 'Contacto' , 'Servicios' ],
     carrousel:{
-      video: true,
-      videos: [video],
-      img: [],
+      img: [
+        {id: 1, src: carHome1},
+        {id: 2, src: carHome1},
+        {id: 3, src: carHome1},
+      ],
     }
   }
 

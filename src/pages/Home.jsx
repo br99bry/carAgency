@@ -4,10 +4,6 @@ import './styles/Home.scss';
 
 import CarrouselHome from '../components/CarruselHome';
 
-
-import { FaArrowRight } from "react-icons/fa";
-import { FaArrowLeft } from "react-icons/fa";
-
 const Home = ( {home} ) => {
 
 
