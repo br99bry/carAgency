@@ -9,7 +9,7 @@ const Navbar = ( {navbar} ) =>{
     <>
       <div className="Navbar">
         <div className="NavbarWrapper">
-          <nav class="navigation" role="navigation">
+          <nav role="navigation">
             <div id="menuToggle" className="NavbarWrapper__nav-menuToggle" >
             <input type="checkbox" />
             <span></span>
@@ -20,7 +20,7 @@ const Navbar = ( {navbar} ) =>{
               <Link to="/"><li>{navbar.links[1]}</li></Link>
               <li>
                 <Link to="/">{navbar.links[2]}</Link>
-                <ul class="submenu">
+                <ul className="submenu">
                   <li><Link to="/">Themes</Link></li>
                   <li><Link to="/">Plugins</Link></li>
                   <li><Link to="/">Tutorials</Link></li>

@@ -39,13 +39,14 @@
 
   & .CarrouselHome__dots{
     // @include border(white);
-    width: auto;
+    width: 150px;
     height: 100px;
     position: absolute;
     z-index: 1;
     bottom: 5%;
     left: calc(53%);
     @include flexbox-basic();
+    flex-wrap: wrap;
     & div{
       width: 45px;
       height: 4px;
@@ -60,3 +61,25 @@
     }
   }
 }
+
+
+@media screen and (max-width: 1100px){
+  .CarrouselHome{
+    & .CarrouselHome__bg{
+      object-fit: cover;
+    }
+
+    & .CarrouselHome__arrow{
+      bottom: auto;
+      top: 10vh;
+      left: calc(50% - 75px);
+    }
+
+    & .CarrouselHome__dots{
+      bottom: auto;
+      top: 60vh;
+      left: calc(50% - 75px);
+    }
+  }
+}
+

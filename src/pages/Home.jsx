@@ -57,6 +57,11 @@ const Home = ( {home, images} ) => {
             </span>
           </div>
         </div>
+        <div className="Home__description">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia non temporibus inventore ducimus cumque, similique molestias deleniti nobis, iure earum sunt! Nam aut sed consequuntur fuga, esse ut nulla! Dolore.
+          </p>
+        </div>
         <div className="Home__dark">
           <div className="Home__dark-logo">
             <img src={home.homeDarkLogo} alt="logo"/>
@@ -64,12 +69,14 @@ const Home = ( {home, images} ) => {
           <div className="Home__dark-details">
             <h1> {home.homeDarkTitle[0]} <br/> {home.homeDarkTitle[1]} </h1>
             <div className="Home__dark-details-options">
-              <div> 
-                {home.homeDarkOptions[0]} 
+              <div>
+                <Link to='/'>
+                  {home.homeDarkOptions[0]} 
+                </Link> 
               </div>
               <div id="button-2"> 
                 <div id="slide"></div>
-                <Link>
+                <Link to='/'>
                   {home.homeDarkOptions[1]} 
                 </Link> 
               </div>

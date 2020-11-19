@@ -235,3 +235,18 @@ li > a:only-child:after { content: ''; }
 #button-n:hover a {
   color: #000000;
 }
+
+@media screen and (max-width: 1100px){
+  .Navbar{
+    & .NavbarWrapper{
+      width: 100%;
+      & *{
+        font-size: 1rem;
+      }
+
+      & #menuToggle a{
+        padding: 0;
+      }
+    }
+  }
+}
