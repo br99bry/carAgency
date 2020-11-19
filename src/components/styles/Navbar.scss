@@ -249,4 +249,12 @@ li > a:only-child:after { content: ''; }
       }
     }
   }
+
+  .NavbarWrapper .NavbarWrapper__contactButton{
+    top: 20px;
+    & #button-n{
+      height: 30px;
+      width: 105px;
+    }
+  }
 }

@@ -9,7 +9,7 @@
   grid-template-rows: 100vh;
 
   & .Home__interior{
-    @include border(rgb(15, 236, 8));
+    // @include border(rgb(15, 236, 8));
     // background-color: white;
     position: absolute;
     width: 350px;
@@ -54,7 +54,7 @@
   }
 
   & .Home__description{
-    border: 1px solid red;
+    // border: 1px solid red;
     position: absolute;
     width: 350px;
     height: auto;
@@ -272,7 +272,7 @@
 
 @media screen and (max-width: 550px){
   .Home{
-
+    grid-template-rows: 55% 45%;
     & .Home__interior{
       display: none;
     }
