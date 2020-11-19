@@ -9,6 +9,46 @@
   grid-template-rows: 100vh;
   background: rgb(195, 178, 178);
 
+  & .Home__interior{
+    // @include border(rgb(15, 236, 8));
+    // background-color: white;
+    position: absolute;
+    width: 350px;
+    height: 200px;
+    right: 5%;
+    bottom: 10%;
+    z-index: 5;
+    @include flexbox-basic(flex-start);
+
+    & .Home__interior-img{
+      // @include border(red);
+      width: 70%;
+      height: 100%;
+      @include flexbox-basic(flex-start);
+      overflow: hidden;
+      scroll-behavior: smooth;
+      & img{
+        width: 100%;
+        height: 100%;
+      }
+
+    }
+
+    & .Home__interior-row{
+      // @include border(blue);
+      width: 30%;
+      height: 100%;
+      background-color: red;
+      @include flexbox-basic();
+      & span{
+        cursor: pointer;
+        &:hover{
+          transform: scale(0.8);
+        }
+      }
+    }
+  }
+
   & .Home__dark{
     // @include border();
     grid-column: 1/2;
@@ -37,9 +77,11 @@
       & > h1{
         // @include border(red);
         color: white;
-        font-size: 3rem;
+        font-size: 2.8rem;
+        font-family: $font-oswald;
+        font-weight: 400;
         margin: 0;
-        letter-spacing: 5px;
+        letter-spacing: 7px;
         margin-bottom: 50px;
       }
       & .Home__dark-details-options{
@@ -52,6 +94,8 @@
           text-align: center;
           padding: 15px 0;
           cursor: pointer;
+          font-family: $font-oswald;
+          font-weight: 400;
         }
         & > div:nth-of-type(1){
           background-color: white;
@@ -79,4 +123,35 @@
       scroll-behavior: smooth;
     }
   }
+}
+
+#button-2 {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#button-2 a {
+  position: relative;
+  transition: all .35s ease-Out;
+  color: white;
+  text-decoration: none;
+}
+
+#slide {
+  width: 100%;
+  height: 100%;
+  left: -200px;
+  background: #BFC0C0;
+  position: absolute;
+  transition: all .35s ease-Out;
+  bottom: 0;
+}
+
+#button-2:hover #slide {
+  left: 0;
+}
+
+#button-2:hover a {
+  color: #000000;
 }

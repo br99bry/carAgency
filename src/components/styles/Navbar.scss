@@ -14,45 +14,220 @@
   // @include border(blue);
   width: 80%;
   height: 100%;
-  @include flexbox-basic(space-around,
-  flex-end);
-  & .NavbarWrapper__burgerMenu{
-    // @include border(green);
-    width: 60px;
-    height: 40px;
-    @include flexbox-basic();
-    & img{
-      width: 100%;
-      height: 100%;
-    }
-  }
+  font-family: $font-oswald;
+  font-weight: 400;
 
-  & .NavbarWrapper__options{
-    // @include border(black);
-    & ul{
-      // @include border();
-      list-style: none;
-      padding: 0;
-      @include flexbox-basic();
-      padding: 15px 10px;
-      margin: 0;
-      & li{
-        margin-right: 25px;
-        & a{
-          color: white;
-          text-decoration: none;
-          font-weight: bold;
-          font-size: 1.3rem;
-        }
-      }
-    }
-  }
+  
   & .NavbarWrapper__contactButton{
     @include border(white);
-    padding: 15px 30px;
-    & p{
-      margin: 0;
-      color: white;
-    }
+    width: 120px;
+    text-align: center;
+    position: absolute;
+    right: 5%;
   }
 }
+
+#menuToggle {
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px ;
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover {
+	color: #8a8a8a;
+}
+
+
+#menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; 
+  z-index: 2; 
+  
+  -webkit-touch-callout: none;
+}
+
+#menuToggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #cdcdcd;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #fff;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu {
+  // @include border(red);
+  position: absolute;
+  width: 100%;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 55px;
+  margin-left: 20px;
+  background:transparent;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li {
+  padding:  0;
+  font-size: 22px;
+  display: inline-block;
+  margin-right: 10px;
+	margin-left: 10px;
+	
+}
+.submenu { margin-top: 20px;}
+.submenu li {
+  display: block !important;
+}
+#menuToggle input:checked ~ ul {
+  transform: none;
+}
+
+
+
+
+nav a {
+	
+	color:#FFF;
+	font-size:20px;
+	line-height: 60px;
+	text-decoration:none;
+}
+
+nav a:hover { 
+	background-color: #000000; 
+}
+
+/* Hide Dropdowns by Default */
+nav ul ul {
+	display: none;
+    position: absolute;
+    top: 90px;
+    left: 273px;
+    padding-left: 0;
+    background: #151515;
+}
+	
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+	display:inherit;
+}
+	
+	
+/* Change this in order to change the Dropdown symbol */
+li > a:after { content:  ' '; }
+li > a:only-child:after { content: ''; }
+
+
+@media (max-width: 414px) {
+#menu li {
+    padding: 0;
+    font-size: 12px;
+    display: inline-block;
+    margin-right: 0;
+    margin-left: 0;
+}
+#menu {margin-left: 0;}
+#menuToggle a { font-size: 12px;}
+#menuToggle {top: 30px; left: 30px; max-width: 100vw;}
+#menuToggle span {
+    display: block;
+    width: 27px;
+    height: 2px; }
+}
+
+#menu {
+    position: absolute;
+    width: 100%;
+    margin: -100px 0 0 -50px;
+    padding: 0;
+    padding-left: 30px;
+    padding-top: 55px;
+    margin-left: 20px;}
+
+    #button-n {
+      @include border();
+      padding: 15px 0px;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    
+    #button-n a{
+      color: white;
+      text-decoration: none;
+      position: relative;
+      transition: all .35s ease-Out;
+    }
+    
+    #slideN {
+      width: 100%;
+      height: 100%;
+      left: -200px;
+      background: #BFC0C0;
+      position: absolute;
+      transition: all .35s ease-Out;
+      bottom: 0;
+    }
+    
+    #button-n:hover #slideN {
+      left: 0;
+    }
+    
+    #button-n:hover a {
+      color: #000000;
+    }
