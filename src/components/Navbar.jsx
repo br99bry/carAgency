@@ -33,7 +33,9 @@ const Navbar = ( {navbar} ) =>{
           <div className="NavbarWrapper__contactButton">
             <div id="button-n">
               <div id="slideN"></div>
-              <Link to="/" > {navbar.links[4]} </Link>
+              <Link to="/" > 
+                {navbar.links[4]} 
+              </Link>
             </div>
           </div>
         </div>
