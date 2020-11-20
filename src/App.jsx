@@ -4,7 +4,7 @@ import './App.scss';
 
 import Layout from './components/Layout';
 import Home from './pages/Home';
-
+import InkingLights from './pages/InkingLights';
 
 const App = () => {
   return (
@@ -16,6 +16,14 @@ const App = () => {
             render={
               () => (
                 <Home />
+              )
+            }
+          />
+          <Route 
+            exact path='/s1'
+            render={
+              () => (
+                <InkingLights />
               )
             }
           />
