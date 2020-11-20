@@ -10,11 +10,11 @@ const AboutWhitSliderDetails = () => {
     <>
     <section className="AboutWhitSliderDetails">
       <div className="AboutWhitSliderDetails__detailsDescription">
-
+        <h2> ¿Qué es? </h2>
+        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus vel, suscipit magnam quidem ad at perspiciatis id, delectus porro veritatis neque velit accusantium odit voluptatibus quam corrupti illo molestiae nostrum! </p>
       </div>
       <div className="AboutWhitSliderDetails__img">
         <img src={faros} alt=""/>
-        dwfee
       </div>
     </section>
     </>

@@ -6,12 +6,16 @@ import './styles/InkingLights.scss';
 
 import HeroOneCar from '../components/HeroOneCar';
 import AboutWhitSliderDetails from '../components/AboutWhitSliderDetails';
+import AboutProcess from '../components/AboutProcess';
 
 const InkingLights = () => {
   return (
     <>
-      <HeroOneCar />
-      <AboutWhitSliderDetails />
+      <div className="InkingLights">
+        <HeroOneCar />
+        <AboutWhitSliderDetails />
+        <AboutProcess />
+      </div>
     </>
   );
 }

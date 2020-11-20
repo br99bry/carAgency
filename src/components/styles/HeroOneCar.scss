@@ -1,2 +1,35 @@
 @import '../../assets/styles/mixins.scss';
 @import '../../assets/styles/vars.scss';
+
+
+.HeroOneCar{
+  // @include border();
+  width: 100vw;
+  max-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  & .HeroOneCar__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  & .HeroOneCar__logo{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+
+  & .HeroOneCar__title{
+    position: absolute;
+    color: white;
+    bottom: 100px;
+    right: 25%;
+    font-size: 3rem;
+    font-family: $font-oswald;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+}

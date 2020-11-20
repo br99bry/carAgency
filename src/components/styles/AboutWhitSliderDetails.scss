@@ -3,7 +3,7 @@
 
 .AboutWhitSliderDetails{
   // @include border();
-  width: 90vw;
+  width: 90%;
   overflow: hidden;
   display: grid;
   grid-template-columns: 1.3fr 1fr;
@@ -11,13 +11,22 @@
   padding: 50px 5%;
 
   & .AboutWhitSliderDetails__detailsDescription{
-    @include border();
+    // @include border();
     grid-column: 1/2;
     grid-row: 1/2;
+    padding: 5% 10%;
+    & h2{
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    & p{
+      font-size: 1.5rem;
+      letter-spacing: 1px;
+    }
   }
   
   & .AboutWhitSliderDetails__img{
-    @include border();
+    // @include border();
     grid-column: 2/3;
     grid-row: 1/2;
 
