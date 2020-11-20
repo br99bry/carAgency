@@ -156,6 +156,7 @@ nav ul li:nth-of-type(3){
 nav ul ul {
 	display: none;
   position: absolute;
+  z-index: 2;
   top: 40px;
   left: 0;
   padding: 0;
@@ -164,7 +165,7 @@ nav ul ul {
 	
 /* Display Dropdowns on Hover */
 nav ul li:hover > ul {
-	display:inherit;
+	display:inherit; 
 }
 
 @media (max-width: 1100px){
@@ -173,9 +174,17 @@ nav ul li:hover > ul {
   }
   #menu{
     padding-top: 20px;
+    left: 50px;
+    padding: 0;
+    margin: 0;
+    top: -28px;
   }
-  #menuToggle input{
-    
+  #menuToggle{
+    top: 30px;
+  }
+
+  nav a {
+    line-height: 65px;
   }
 }
 
@@ -239,5 +248,22 @@ nav ul li:hover > ul {
       height: 30px;
       width: 105px;
     }
+  }
+}
+
+@media screen and (max-width: 750px){
+  #menuToggle input:checked ~ ul{
+    top: 300px;
+    transform: rotate(270deg);
+    left: -30px;
+  }
+  #menu li{
+    transform: rotate(90deg);
+  }
+
+  .submenu{
+    left: 115px;
+    transform: rotate(270deg);
+    top: -67px;
   }
 }
