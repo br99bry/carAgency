@@ -70,7 +70,7 @@ const Home = ( {home, imagesInterior} ) => {
             <h1> {home.homeDarkTitle[0]} <br/> {home.homeDarkTitle[1]} </h1>
             <div className="Home__dark-details-options">
               <div>
-                <Link to='/'>
+                <Link to='/s1/'>
                   {home.homeDarkOptions[0]} 
                 </Link> 
               </div>

@@ -5,13 +5,18 @@ import { Link } from 'react-router-dom';
 import './styles/AboutWhitSliderDetails.scss';
 import faros from '../assets/img/faros.jpg';
 
-const AboutWhitSliderDetails = () => {
+const AboutWhitSliderDetails = ( {data} ) => {
   return (
     <>
     <section className="AboutWhitSliderDetails">
       <div className="AboutWhitSliderDetails__detailsDescription">
-        <h2> ¿Qué es? </h2>
-        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus vel, suscipit magnam quidem ad at perspiciatis id, delectus porro veritatis neque velit accusantium odit voluptatibus quam corrupti illo molestiae nostrum! </p>
+        <h2> {data.title} </h2>
+        <p> {data.details} </p>
+        <div className="AboutWhitSliderDetails__detailsDescription-dots">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
       </div>
       <div className="AboutWhitSliderDetails__img">
         <img src={faros} alt=""/>
@@ -21,9 +26,5 @@ const AboutWhitSliderDetails = () => {
   )
 }
 
-const mapStateToProps = state => {
-  return {
 
-  }
-}
-export default connect( mapStateToProps, null )(AboutWhitSliderDetails);
+export default AboutWhitSliderDetails;

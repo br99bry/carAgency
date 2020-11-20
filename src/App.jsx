@@ -20,7 +20,7 @@ const App = () => {
             }
           />
           <Route 
-            exact path='/s1'
+            exact path='/s1/'
             render={
               () => (
                 <InkingLights />
