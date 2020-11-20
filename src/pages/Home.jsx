@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 
 import './styles/Home.scss';
 
-import rightArrow from '../assets/img/right-arrow.png';
 import CarrouselHome from '../components/CarruselHome';
+import rightArrow from '../assets/img/right-arrow.png';
 
-const Home = ( {home, images} ) => {
+const Home = ( {home, imagesInterior} ) => {
 
   const carrusel = useRef();
   const carruselInterior = useRef();
@@ -46,7 +46,7 @@ const Home = ( {home, images} ) => {
         <div className="Home__interior">
           <div className="Home__interior-img" ref={carruselInterior} >
             {
-            images.map(img => (
+            imagesInterior.map(img => (
             <img key={img.id} src={img.src} alt="img interior"/>
             ))
             }
@@ -99,7 +99,7 @@ const Home = ( {home, images} ) => {
 const mapStateToProps = state => {
   return {
     home: state.home,
-    images: state.home.carrousel.img,
+    imagesInterior: state.home.carrouselOfInterior.img,
   }
 }
 

@@ -16,8 +16,16 @@ const Navbar = ( {navbar} ) =>{
             <span></span>
             <span></span>
             <ul id="menu">
-              <Link to="/"><li>{navbar.links[0]}</li></Link>
-              <Link to="/"><li>{navbar.links[1]}</li></Link>
+              <li>
+              <Link to="/">
+                {navbar.links[0]}
+              </Link>
+              </li>
+              <li>
+              <Link to="/">
+                {navbar.links[1]}
+              </Link>
+              </li>
               <li>
                 <Link to="/">{navbar.links[2]}</Link>
                 <ul className="submenu">
@@ -26,7 +34,11 @@ const Navbar = ( {navbar} ) =>{
                   <li><Link to="/">Tutorials</Link></li>
                 </ul>        
               </li>
-              <Link to="/"><li>{navbar.links[3]}</li></Link>
+              <li>
+              <Link to="/">
+                {navbar.links[3]}
+              </Link>
+              </li>
             </ul>
             </div>
           </nav>
