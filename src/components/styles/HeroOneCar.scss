@@ -33,3 +33,32 @@
     letter-spacing: 1px;
   }
 }
+
+@media screen and (max-width: 1100px){
+  .HeroOneCar{
+    & .HeroOneCar__logo{
+      left: calc(50% - 50px);
+      width: 100px;
+      height: 100px;
+    }
+
+    & .HeroOneCar__title{
+      font-size: 2rem;
+      right: 4%;
+    }
+  }
+}
+
+@media screen and (max-width: 500px){
+  .HeroOneCar{
+    & .HeroOneCar__logo{
+      width: 70px;
+      height: 70px;
+    }
+    & .HeroOneCar__title{
+      font-size: 1.7rem;
+      background-color: rgba(123, 124, 124,0.3);
+      bottom: 2%;
+    }
+  }
+}

@@ -56,17 +56,18 @@
     color: white;
     width: 80%;
     @include flexbox-basic(space-between, flex-start);
-  
     & .AboutProcess__plusInformation-quiz1{
       // @include border();
+      width: 40%;
       height: 100%;
       & h2{
-        font-size: 2.3rem;
+        font-size: 2rem;
         font-family: $font-oswald;
+        text-align: left;
       }
   
       & p{
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         letter-spacing: 1px;
         margin-bottom: 50px;
         line-height: 35px;
@@ -77,8 +78,8 @@
         height: 100px;
         @include flexbox-basic(flex-start);
         & div{
-          width: 80px;
-          height: 80px;
+          width: 50px;
+          height: 50px;
           border-radius: 50%;
           margin-right: 40px;
         }
@@ -96,19 +97,84 @@
 
     & .AboutProcess__plusInformation-quiz2{
       // @include border();
+      width: 40%;
+
       & h2{
-        font-size: 2.3rem;
+        font-size: 2rem;
         font-family: $font-oswald;
+        text-align: right;
       }
   
       & p{
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         letter-spacing: 1px;
         margin-bottom: 100px;
         line-height: 35px;
         font-family: $font-lato;
+        text-align: right;
       }
     }
   }
 
+}
+
+@media screen and (max-width: 1100px){
+  .AboutProcess{
+    & .AboutProcess__plusInformation{
+      & .AboutProcess__plusInformation-quiz1,
+      & .AboutProcess__plusInformation-quiz2{
+        & h2{
+          font-size: 1.5rem;
+        }
+        & p{
+          font-size: 1rem;
+        }
+      }
+      & .AboutProcess__plusInformation-quiz1{
+        & .AboutProcess__plusInformation-quiz1-colors{
+          & div{
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px){
+  .AboutProcess{
+    padding-bottom: 0px;
+
+    & .AboutProcess__details,
+    & .AboutProcess__process{
+      & h2{
+        font-size: 1.5rem;
+      }
+      & p{
+        font-size: 1rem;
+      }
+    }
+    & .AboutProcess__img{
+      flex-direction: column;
+      margin-bottom: 50px;
+      & img{
+        margin-bottom: 20px;
+        width: 85%;
+      }
+    }
+    & .AboutProcess__plusInformation{
+      flex-direction: column;
+      & .AboutProcess__plusInformation-quiz1,
+      & .AboutProcess__plusInformation-quiz2{
+        width: 90%;
+        & h2,
+        & p{
+          text-align: center;
+        }
+        & .AboutProcess__plusInformation-quiz1-colors{
+          justify-content: center;
+        }
+      }
+    }
+  }
 }
