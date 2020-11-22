@@ -131,6 +131,15 @@ margin-top: 20px;
 }
 .submenu li {
   display: block !important;
+
+  & a {
+    line-height: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    &:hover{
+      background-color: transparent;
+    }
+  }
 }
 #menuToggle input:checked ~ ul {
   transform: none;
@@ -257,13 +266,16 @@ nav ul li:hover > ul {
     transform: rotate(270deg);
     left: -30px;
   }
-  #menu li{
+  #menu > li{
     transform: rotate(90deg);
   }
 
   .submenu{
-    left: 115px;
-    transform: rotate(270deg);
-    top: -67px;
+    // display: block;
+    left: 55px;
+    top: 10px;
+    & li a{
+      transform: rotate(270deg) !important;
+    }
   }
 }

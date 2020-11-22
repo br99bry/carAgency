@@ -18,6 +18,7 @@
     bottom: 10%;
     z-index: 5;
     @include flexbox-basic(flex-start);
+    display: none;
 
     & .Home__interior-img{
       // @include border(red);
@@ -56,6 +57,7 @@
 
   & .Home__description{
     // border: 1px solid red;
+    display: none;
     position: absolute;
     width: 350px;
     height: auto;

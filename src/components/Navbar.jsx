@@ -29,9 +29,17 @@ const Navbar = ( {navbar} ) =>{
               <li>
                 <Link to="/">{navbar.links[2]}</Link>
                 <ul className="submenu">
-                  <li><Link to="/">Themes</Link></li>
-                  <li><Link to="/">Plugins</Link></li>
-                  <li><Link to="/">Tutorials</Link></li>
+                  <li><Link to="/"> Servicio </Link></li>
+                  <li><Link to="/"> Servicio </Link></li>
+                  <li><Link to="/"> Servicio </Link></li>
+                  <li><Link to="/"> Servicio </Link></li>
+                  <li><Link to="/"> Servicio </Link></li>
+                  <li><Link to="/"> Servicio </Link></li>
+                  <li><Link to="/"> Servicio </Link></li>
+                  <li><Link to="/"> Servicio </Link></li>
+                  <li><Link to="/"> Servicio </Link></li>
+                  <li><Link to="/"> Servicio </Link></li>
+
                 </ul>        
               </li>
               <li>
