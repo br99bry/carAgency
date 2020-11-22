@@ -10,9 +10,6 @@ import logoHome from './assets/img/fondoHome.png';
 import carHome1 from './assets/img/carHome1.jpg';
 import carHome2 from './assets/img/carHome2.jpg';
 import carHome3 from './assets/img/carHome3.jpg';
-import carInterior2 from './assets/img/carInterior2.jpg';
-import carInterior1 from './assets/img/carInterior1.JPG';
-import carInterior3 from './assets/img/carInterior3.jpg';
 import bgHeroInkingLights from './assets/img/faros.jpg';
 
 
@@ -31,13 +28,6 @@ const initialState = {
         {id: 3, src: carHome3},
       ],
     },
-    carrouselOfInterior: {
-      img: [
-        { id: 1, src: carInterior1 },
-        { id: 2, src: carInterior2 },
-        { id: 3, src: carInterior3 },
-      ]
-    }
   },
   services: {
     InkingLights:{

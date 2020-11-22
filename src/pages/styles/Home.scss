@@ -8,72 +8,6 @@
   grid-template-columns: 20vw 80vw;
   grid-template-rows: 100vh;
 
-  & .Home__interior{
-    // @include border(rgb(15, 236, 8));
-    // background-color: white;
-    position: absolute;
-    width: 350px;
-    height: 200px;
-    right: 5%;
-    bottom: 10%;
-    z-index: 5;
-    @include flexbox-basic(flex-start);
-    display: none;
-
-    & .Home__interior-img{
-      // @include border(red);
-      width: 70%;
-      height: 100%;
-      @include flexbox-basic(flex-start);
-      overflow: hidden;
-      scroll-behavior: smooth;
-      background-color: white;
-      & img{
-        width: 100%;
-        height: 100%;
-      }
-
-    }
-
-    & .Home__interior-row{
-      // @include border(blue);
-      width: 30%;
-      height: 100%;
-      background-color: white;
-      @include flexbox-basic();
-      & span{
-        cursor: pointer;
-        filter: invert(100%);
-        &:hover{
-          transform: scale(0.8);
-        }
-        &:active{
-          transform: scale(1.8);
-          transition-duration: 450ms;
-        }
-      }
-    }
-  }
-
-  & .Home__description{
-    // border: 1px solid red;
-    display: none;
-    position: absolute;
-    width: 350px;
-    height: auto;
-    right: 5%;
-    bottom: 40%;
-    z-index: 5;
-
-    & p{
-      color: white;
-      line-height: 20px;
-      letter-spacing: 1px;
-      font-family: $font-lato;
-      font-weight: 400;
-    }
-  }
-
   & .Home__dark{
     // @include border();
     grid-column: 1/2;
@@ -186,63 +120,22 @@
   color: #000000;
 }
 
-@media screen and (max-width: 1272px){
-  .Home{
-    & .Home__interior{
-      right: 1%;
-      width: 320px;
-
-      & .Home__interior-img{
-        width: 80%;
-      }
-      & .Home__interior-row{
-        width: 20%;
-      }
-    }
-
-    & .Home__description{
-      right: 1%;
-    }
-  }
-}
-
 @media screen and (max-width: 1100px){
   .Home{
     // border: 1px solid red;
     height: 100vh;
     grid-template-columns: 100vw;
-    grid-template-rows: 70% 30%;
+    // grid-template-rows: 70% 30%;
+    grid-template-rows: 55% 45%;
     overflow: hidden;
-
-    & .Home__interior{
-      right: 1%;
-      bottom: 5%;
-      width: 200px;
-      flex-direction: column;
-      & .Home__interior-img{
-        width: 100%;
-        height: 80%;
-      }
-
-      & .Home__interior-row{
-        width: 100%;
-        height: 20%;
-      }
-    }
-
-    & .Home__description{
-      right: 1%;
-      top: 20%;
-      width: 300px;
-      bottom: auto;
-    }
 
     & .Home__dark{
       grid-column: 1/2;
       grid-row: 2/3;
 
       & .Home__dark-logo{
-        margin: 10px 20px;
+        margin: 10px auto;
+
       }
 
       & .Home__dark-details{
@@ -252,7 +145,7 @@
         width: 100%;
         & h1{
           font-size: 1.5rem;
-          // text-align: center;
+          text-align: center;
           margin: 0;
           margin-bottom: 10px;
           margin-left: 20px;
@@ -260,8 +153,8 @@
 
         & .Home__dark-details-options{
           width: 35%;
-          margin: 0 20px;
-          margin-bottom: 20px;
+          margin: 0 auto;
+
         }
       }
     }
@@ -275,30 +168,15 @@
 
 @media screen and (max-width: 550px){
   .Home{
-    grid-template-rows: 55% 45%;
-    & .Home__interior{
-      display: none;
-    }
-
-    & .Home__description{
-      display: none;
-    }
 
     & .Home__dark{
-
-      & .Home__dark-logo{
-        margin: 10px auto;
-      }
-
       & .Home__dark-details{
         & h1{
           font-size: 1.3rem;
-          text-align: center;
         }
 
         & .Home__dark-details-options{
           width: 65%;
-          margin: 0 auto;
         }
       }
     }

@@ -5,22 +5,10 @@ import { Link } from 'react-router-dom';
 import './styles/Home.scss';
 
 import CarrouselHome from '../components/CarruselHome';
-import rightArrow from '../assets/img/right-arrow.png';
 
-const Home = ( {home, imagesInterior} ) => {
+const Home = ( {home} ) => {
 
   const carrusel = useRef();
-  const carruselInterior = useRef();
-
-  const movRightInterior = (e) => {
-    console.log(carruselInterior);
-    let validar = carruselInterior.current.scrollLeft + carruselInterior.current.offsetWidth + 10 ;
-    if(validar  < carruselInterior.current.scrollWidth){
-      carruselInterior.current.scrollLeft += carruselInterior.current.offsetWidth;
-    }else{
-      carruselInterior.current.scrollLeft = 0;
-    }
-  }
 
   const movRight = (e) => {
     let validar = carrusel.current.scrollLeft + carrusel.current.offsetWidth + 10 ;
@@ -43,25 +31,6 @@ const Home = ( {home, imagesInterior} ) => {
   return(
     <>
       <section className="Home">
-        <div className="Home__interior">
-          <div className="Home__interior-img" ref={carruselInterior} >
-            {
-            imagesInterior.map(img => (
-            <img key={img.id} src={img.src} alt="img interior"/>
-            ))
-            }
-          </div>
-          <div className="Home__interior-row">
-            <span onClick={ (e) => (movRightInterior(e)) }>
-              <img alt="flecha derecha" src={rightArrow} />
-            </span>
-          </div>
-        </div>
-        <div className="Home__description">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia non temporibus inventore ducimus cumque, similique molestias deleniti nobis, iure earum sunt! Nam aut sed consequuntur fuga, esse ut nulla! Dolore.
-          </p>
-        </div>
         <div className="Home__dark">
           <div className="Home__dark-logo">
             <img src={home.homeDarkLogo} alt="logo"/>
@@ -99,7 +68,6 @@ const Home = ( {home, imagesInterior} ) => {
 const mapStateToProps = state => {
   return {
     home: state.home,
-    imagesInterior: state.home.carrouselOfInterior.img,
   }
 }
 
