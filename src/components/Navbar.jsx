@@ -29,7 +29,7 @@ const Navbar = ( {navbar} ) =>{
               <li>
                 <Link to="/">{navbar.links[2]}</Link>
                 <ul className="submenu">
-                  <li><Link to="/"> Servicio </Link></li>
+                  <li><Link to="/entintadoDeFaros"> {navbar.servicios[0]} </Link></li>
                   <li><Link to="/"> Servicio </Link></li>
                   <li><Link to="/"> Servicio </Link></li>
                   <li><Link to="/"> Servicio </Link></li>

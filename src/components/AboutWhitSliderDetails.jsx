@@ -1,6 +1,4 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import { Link } from 'react-router-dom';
 
 import './styles/AboutWhitSliderDetails.scss';
 import faros from '../assets/img/faros.jpg';

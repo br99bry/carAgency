@@ -15,7 +15,7 @@
   & .AboutProcess__process{
     color: white;
     width: 60%;
-
+    margin-bottom: 100px;
     & h2{
       font-size: 2.3rem;
       font-family: $font-oswald;
@@ -24,7 +24,7 @@
     & p{
       font-size: 1.5rem;
       letter-spacing: 1px;
-      margin-bottom: 100px;
+      margin-bottom: 10px;
       line-height: 35px;
       font-family: $font-lato;
     }

@@ -4,7 +4,12 @@ import { Link } from 'react-router-dom';
 
 import './styles/AboutProcess.scss';
 
-const AboutProcess = ( {data} ) => {
+const AboutProcess = ( {data , isVisibleAboutProcessPlusInformationIsActive} ) => {
+
+  const  AboutProcessPlusInformationIsActive = {
+    display: `${isVisibleAboutProcessPlusInformationIsActive}` ,
+  }
+
   return (
     <>
     <section className="AboutProcess">
@@ -15,19 +20,23 @@ const AboutProcess = ( {data} ) => {
         </p>
       </div>
       <div className="AbourProcess__video">
-        <iframe src="https://www.youtube.com/embed/x6_cwK8F7aQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/21wVZpgtDqg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
       <div className="AboutProcess__process">
         <h2> {data.title2} </h2>
-        <p> 
-        {data.details2}
-        </p>
+        {data.details2.map(details => {
+          return (
+            <p> 
+              {details}
+            </p>
+          )
+        })}
       </div>
       <div className="AboutProcess__img">
         <img src={data.imgs[0].img} alt=""/>
         <img src={data.imgs[1].img} alt=""/>
       </div>
-      <div className="AboutProcess__plusInformation">
+      <div style={AboutProcessPlusInformationIsActive} className="AboutProcess__plusInformation">
         <div className="AboutProcess__plusInformation-quiz1">
           <h2> {data.title3} </h2>
           <p> {data.details3} </p>

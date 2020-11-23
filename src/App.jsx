@@ -5,6 +5,7 @@ import './App.scss';
 import Layout from './components/Layout';
 import Home from './pages/Home';
 import InkingLights from './pages/InkingLights';
+import Aerodinamica from './pages/Aerodinamica';
 
 const App = () => {
   return (
@@ -20,10 +21,18 @@ const App = () => {
             }
           />
           <Route 
-            exact path='/s1/'
+            exact path='/entintadoDeFaros'
             render={
               () => (
                 <InkingLights />
+              )
+            }
+          />
+          <Route 
+            exact path='/aerodinamica'
+            render={
+              () => (
+                <Aerodinamica />
               )
             }
           />

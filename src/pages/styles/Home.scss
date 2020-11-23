@@ -122,19 +122,19 @@
 
 @media screen and (max-width: 1100px){
   .Home{
-    // border: 1px solid red;
     height: 100vh;
     grid-template-columns: 100vw;
     // grid-template-rows: 70% 30%;
     grid-template-rows: 55% 45%;
     overflow: hidden;
-
+    
     & .Home__dark{
       grid-column: 1/2;
       grid-row: 2/3;
+      align-content: center;
 
       & .Home__dark-logo{
-        margin: 10px auto;
+        margin: 20px auto;
 
       }
 

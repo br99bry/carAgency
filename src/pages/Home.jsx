@@ -2,7 +2,6 @@ import React, { useRef } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 
-import WhatsApp from '../components/WhatsApp';
 import './styles/Home.scss';
 
 import CarrouselHome from '../components/CarruselHome';
@@ -31,7 +30,6 @@ const Home = ( {home} ) => {
 
   return(
     <>
-      <WhatsApp />
       <section className="Home">
         <div className="Home__dark">
           <div className="Home__dark-logo">
@@ -41,7 +39,7 @@ const Home = ( {home} ) => {
             <h1> {home.homeDarkTitle[0]} <br/> {home.homeDarkTitle[1]} </h1>
             <div className="Home__dark-details-options">
               <div>
-                <Link to='/s1/'>
+                <Link to='/entintadoDeFaros'>
                   {home.homeDarkOptions[0]} 
                 </Link> 
               </div>
