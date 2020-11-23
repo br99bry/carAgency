@@ -9,7 +9,7 @@ const WhatsApp = () => {
   return(
     ReactDom.createPortal(
     <div className="WhatsApp">
-      <a to="https://api.whatsapp.com/send?phone=525563196673" >
+      <a href="https://api.whatsapp.com/send?phone=525563196673" >
       <img src={whats} alt="whats app"/>
       </a>
     </div>,
