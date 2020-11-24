@@ -15,14 +15,17 @@ import aerodinamica from './assets/img/aerodinamica.jpg';
 import filtros from './assets/img/filtros.jpg';
 import hidrografia from './assets/img/hidrografia.jpg';
 import paintProtection from './assets/img/paintProtection.jpg';
-
-
-
+import pinturaRines from './assets/img/pinturaRines.jpg';
+import detaling from './assets/img/detaling.jpg';
+import suspension from './assets/img/suspension.jpg';
+import sistemaEscape from './assets/img/sistemaEscape.png';
+import valvulas from './assets/img/valvulas.jpg';
+import wrap from './assets/img/wrap.jpg';
 
 const initialState = {
   navbar: {
     links: ['Inicio','Nosotros','Servicios','Contacto','Escribenos'],
-    servicios: ['Entintado de faros', 'Aerodinamica y Accesorios', 'Filtros', 'Hydrografia', 'Paint Protection'],
+    servicios: ['Entintado de faros', 'Aerodinamica y Accesorios', 'Filtros', 'Hydrografia', 'Paint Protection', 'Pintura en Rines y Calipers', 'Detaling','Sistemas De Escape','Suspension Deportiva','Valvulas De Alivio','Wrap'],
   },
   home: {
     homeDarkLogo: logoHome,
@@ -260,6 +263,326 @@ const initialState = {
         { id: 6, img: paintProtection },
         { id: 7, img: paintProtection },
         { id: 8, img: paintProtection },
+      ]
+    },
+    pinturaRines:{
+      hero: {
+        logo: logoHome,
+        hero: 'PINTURA EN RINES Y CALIPERS',
+        bg: pinturaRines
+      },
+      aboutSlider:{
+        title: '¿PORQUE DEBERIA PINTARLOS?',
+        details: 'PARTE IMPORTANTE EN LA ESTETICA DE UN COCHE SON LOS RINES Y CALIPERS YA QUE SON PARTES 100% VISIBLES EN TODO MOMENTO POR ESE MISMO MOTIVO OFRECEMOS LA MAS ALTA CALIDAD EN PINTURA DE LOS MISMOS',
+        imgs: [ 
+          { id: 1, img: pinturaRines }, 
+          { id: 2, img: pinturaRines }, 
+          { id: 3, img: pinturaRines }, 
+        ]
+      },
+      aboutProcess: {
+        title1: '¿COMO LOS PINTAN?',
+        details1: 'UTILIZAMOS PRODUCTOS COMPLETAMENTAMENTE AUTOMOTRICES UTILIZANDO ADEMAS UN HORNO DE PINTURA PARA QUE TUS RINES Y CALIPERS LUZCAN INCREIBLES',
+        title2: '¿QUE GARANTIA OFRECEN?',
+        details2: [ 'NUESTROS TRABAJOS TIENEN UN AÑO DE GARANTIA',
+        '¿PUEDO PINTARLOS DEL COLOR QUE SEA?',
+        'CLARO TU IMAGINACION ES EL LIMITE',
+        ],
+        video: 'https://www.youtube.com/embed/21wVZpgtDqg',
+        imgs: [ 
+          { id: 1, img: pinturaRines },
+          { id: 2, img: pinturaRines },
+        ],
+        title3: '¿Qué colores manejan?',
+        title4: '¿Qué durabilidad tiene?',
+        details3: 'azul, humo y humo obscuro',
+        details4: '4 a 6 años dependiendo de la exposicion al sol',
+      },
+      colash: [
+        { id: 1, img: pinturaRines },
+        { id: 2, img: pinturaRines },
+        { id: 3, img: pinturaRines },
+        { id: 4, img: pinturaRines },
+        { id: 5, img: pinturaRines },
+        { id: 6, img: pinturaRines },
+        { id: 7, img: pinturaRines },
+        { id: 8, img: pinturaRines },
+      ]
+    },
+    detaling:{
+      hero: {
+        logo: logoHome,
+        hero: 'DETALING',
+        bg: detaling
+      },
+      aboutSlider:{
+        title: '¿QUE ES EL DETAILING?',
+        details: 'El amor hacia tu vehículo puede ser tan grande que el Car Detailing sea tu único pensamiento. Y es que no hay nada más satisfactorio que tener tu auto en perfectas condiciones y lo hagas lucir como nuevo en cada momento. El “Detailing” o “Detallado” es el conjunto de técnicas y procesos especializados y destinados a la limpieza, rejuvenecimiento y protección de las distintas superficies de un vehículo. La utilización de técnicas, procesos y productos adecuados marcan la diferencia entre una simple limpieza y un verdadero resultado “Show Car” o coche de exposición, ya que este el objetivo primordial de PAINT EXPLOSION. Una  correcta limpieza pasa por el uso de las herramientas y productos adecuados, que no sean agresivos para los materiales. Eliminar suciedad es relativamente fácil, pero realizarlo sin rayar o arañar la pintura se requiere paciencia con la tecnica adecuada, con ello lograremos que además  que brille lograremos que tu destaque a lado de otros ya que a rejuvenecido. El rejuvenecimiento se refiere a la recuperación de ese aspecto de nuevo mediante diferentes procesos dependiendo del tipo de superficie, como el pulido de la pintura hasta el nutrido de asientos de cuero, gomas, etc….',
+        imgs: [ 
+          { id: 1, img: detaling }, 
+          { id: 2, img: detaling }, 
+          { id: 3, img: detaling }, 
+        ]
+      },
+      aboutProcess: {
+        title1: '¿Por qué detallar un vehículo?',
+        details1: 'Existen diferentes razones para detallar un coche:',
+        title2: '¿Por qué detallar un vehículo?',
+        details2: [ 'Existen diferentes razones para detallar un coche:',
+        '•	Satisfacción personal por saber que tienes un auto que luce radiante.',
+        '•	Aumentar el valor económico en un posible precio a la hora de una posible venta de tu auto.',
+        '•	La imagen del auto es sumamente llamativa y notaras un aumento de vida en los elementos que lo componen.',
+        '•	Recuperación estética de tu auto de pequeños daños producidos por cuidados erróneos',
+        '•	Garantizar una mejor conservación de tu auto y sus materiales a largo plazo. Protegiéndolo de los agentes externos (UV, lluvia ácida, contaminantes…)',
+        'PROCESOS',
+        '1. LAVADO',
+        'Es el primer proceso y la base de todo buen “Detailing”, es también el proceso que más puede afectar nuestra pintura, si es que no se hace de manera correcta. Por ejemplo en nuestro país muchos usan solo un balde, que muchas veces es agua reciclada, y un trapo para quitarle la suciedad que no es necesariamente de microfibra.',
+        'Ahora bien un correcto lavado es utilizar máquinas a presión que puedan quitar la suciedad de manera más profunda, rápida y eficiente.',
+        '2. SECADO',
+        'Generalmente en este paso muchos utilizan el mismo trapo con el que lavaron pero bien exprimido o en algunas veces dejan que la carrocería se seque sola pero quedan las huellas del agua.',
+        'La manera correcta es utilizando toalla de microfibra, que absorben hasta 7 veces más que el algodón. Asimismo, una pistola de secado que permite correr el agua de las zonas más recónditas de nuestra carrocería',
+        '3.- DESCONTAMINADO',
+        'Esta técnica se realiza utilizando un material denominado “clay bar” o “barra de arcilla” que consiste en una resina sintética que se encarga de atrapar las diferentes partículas que se pueden encontrar en la pintura, esto se realiza luego de lavar y secar el vehículo.',
+        'Asimismo, esta arcilla también se puede pasar por cristales, plásticos y cromados.',
+        '4.- PULIDO',
+        'Llamado también “Polish” es un compuesto cremoso que contiene micro abrasivos, los cuales tienen la misión de eliminar las imperfecciones de nuestra pintura y le regresa el brillo pero debemos tomar en cuenta que no elimina los arañones profundos.',
+        'Si bien se puede hacer a mano, la mejor forma es con una máquina pulidora ya que obtenemos mejores resultados y más rápidos. No obstante, siempre es bueno que se realice por profesionales ya que sabrán qué tipo de “Polish” utilizar para eliminar esos pequeños rasguños.',
+        '5.- ENCERADO',
+        'Básicamente la cera es un componente que sirve como capa de protección para nuestra pintura así como para darle un brillo extra. La aplicación correcta es echar la cera en toda la carrocería (es mejor usar el color del auto), esperar que seque y luego se retira con una toalla de microfibra.',
+        '6.- ALFOMBRA Y CIELO',
+        'Deben de ser correctamente aspiradas y rociados con una solución que logre retirar las manchas.',
+        '7.- EL TABLERO',
+        'Debe limpiarse de la tierra e impurezas para luego rociar con silicona y tener una mayor protección contra la suciedad y rayos UV.',
+        '8.- PISOS',
+        'Dependiendo de cual tengamos, si fuera de jebe o de alfombras. En el primer caso el lavado es a presión con shampoo y el segundo una aspirada concienzuda para aplicarle una solución que quite manchas',
+        '9.- ASIENTOS',
+        'Ya sea que los tengamos de cuero (se le coloca un renovador, previamente una limpieza para quitarle las impurezas) y si fuera de tela (se aspira correctamente y se le pasa una esponja con agua y jabón especial para quitarle las manchas)',
+        '10.- PLASTICOS',
+        'Se procede con la limpieza previa para luego colocarles renovadores para mantener el brillo de los mismos.Para finalizar también se limpian las llantas con silicona y los aros con agua y shampoo.',
+        '¿Imaginas cómo quedará tu auto después de este proceso?',
+        '11.- PROCESO CERAMICO',
+        'Como último paso del auto detailing, se aplica la protección cerámica al automóvil. Esta es una base que protege la pintura del sol. Este recubrimiento cerámico es tan fuerte que sólo puede removerse a través de la abrasión. ',
+        'México ha incursionado en el car detailing durante los últimos años con mucho éxito, ya que nuestro país se caracteriza por ser un amante de los autos. Según cifras del IMCO, en 2017 el parque vehicular creció casi 5 veces más que la tasa de población, lo cual representa un área de oportunidad para los empresarios automovilísticos.'
+        ],
+        video: 'https://www.youtube.com/embed/21wVZpgtDqg',
+        imgs: [ 
+          { id: 1, img: detaling },
+          { id: 2, img: detaling },
+        ],
+        title3: '¿Qué colores manejan?',
+        title4: '¿Qué durabilidad tiene?',
+        details3: 'azul, humo y humo obscuro',
+        details4: '4 a 6 años dependiendo de la exposicion al sol',
+      },
+      colash: [
+        { id: 1, img: detaling },
+        { id: 2, img: detaling },
+        { id: 3, img: detaling },
+        { id: 4, img: detaling },
+        { id: 5, img: detaling },
+        { id: 6, img: detaling },
+        { id: 7, img: detaling },
+        { id: 8, img: detaling },
+      ]
+    },
+    sistemasEscape:{
+      hero: {
+        logo: logoHome,
+        hero: 'SITEMAS DE ESCAPE',
+        bg: sistemaEscape
+      },
+      aboutSlider:{
+        title: '¿Qué es?',
+        details: 'El sistema de escape de un vehículo es el responsable de conducir hacia el exterior los residuos que se producen en un motor de combustión interna. Todo proceso de combustión conlleva la generación de residuos, residuos que se producen por diferentes motivos, por ejemplo, cuando la combustión, es decir, la quema del combustible, no se produce completamente se generan residuos “no quemados” que deben ser sacados de la recamara de combustión para repetir el proceso. Entonces, como el proceso de combustión dentro de un motor es cíclico, es decir, repetitivo, la generación de residuos dentro de la recamara que deben ser expedidos hacia el exterior son constantes. Es allí, donde entra la importancia del sistema de escape, ya que, es a través de él que estos residuos son conducidos hacia afuera del vehículo.',
+        imgs: [ 
+          { id: 1, img: sistemaEscape }, 
+          { id: 2, img: sistemaEscape }, 
+          { id: 3, img: sistemaEscape }, 
+        ]
+      },
+      aboutProcess: {
+        title1: '¿Para qué sirve?',
+        details1: 'El sistema de escape fue diseñado para la correcta eliminación de los gases de escape desde la recamara de combustión hacia el exterior del vehículo. Gracias a los avances de la ciencia en los diferentes puntos de la tecnología y el aumento de la preocupación por el cuidado del planeta han sido diseñados formas cada vez mejores de poder controlar que estos gases de efecto invernadero cada vez sean menos dañinos para el ambiente.',
+        title2: '¿EN QUE AYUDA UN SISTEMA DE ESCAPE DEPORTIVO?',
+        details2: [ 'Al intercambiar el sistema de escape original del automóvil, por uno de alto desempeño lo que se logra es obtener una ruta más rápida y eficiente para que desemboquen los gases de escape del motor.',
+        'esta solución permite que el motor "respire" mejor, por lo que el combustible quemado y el aire salen de las cámaras de combustión mucho más rápido. Esto significa que se puede quemar más combustible y aire para crear más poder.',
+        'Tiempo de vida',
+        'El fabricante estima una duración de por vida, tomando en consideración el uso y mantenimiento. ',
+        'Garantía',
+        'Garantía de por vida. Aplican Restricciones, ver manual de fabricante.',
+        
+        ],
+        video: 'https://www.youtube.com/embed/21wVZpgtDqg',
+        imgs: [ 
+          { id: 1, img: sistemaEscape },
+          { id: 2, img: sistemaEscape },
+        ],
+        title3: '¿Qué colores manejan?',
+        title4: '¿Qué durabilidad tiene?',
+        details3: 'azul, humo y humo obscuro',
+        details4: '4 a 6 años dependiendo de la exposicion al sol',
+      },
+      colash: [
+        { id: 1, img: sistemaEscape },
+        { id: 2, img: sistemaEscape },
+        { id: 3, img: sistemaEscape },
+        { id: 4, img: sistemaEscape },
+        { id: 5, img: sistemaEscape },
+        { id: 6, img: sistemaEscape },
+        { id: 7, img: sistemaEscape },
+        { id: 8, img: sistemaEscape },
+      ]
+    },
+    suspensionDeportiva:{
+      hero: {
+        logo: logoHome,
+        hero: 'SUSPENSION DEPORTIVA',
+        bg: suspension
+      },
+      aboutSlider:{
+        title: '¿QUE ES Y COMO FUNCIONA?',
+        details: 'Este sistema se encarga de recibir las oscilaciones del terreno para minimizarlas o suprimirlas de tal forma que no se desajuste el vehículo, creando en los ocupantes una sensación de confort. La suspensión deportiva mejora la apariencia de su vehículo y añade estabilidad para aumentar su confianza de coducción en la pisada de las ruedas',
+        imgs: [ 
+          { id: 1, img: suspension }, 
+          { id: 2, img: suspension }, 
+          { id: 3, img: suspension }, 
+        ]
+      },
+      aboutProcess: {
+        title1: '¿Para qué sirve?',
+        details1: 'Su objetivo es mejorar el manejo, ya que, al modificar estos componentes, obtienes un mayor agarre, confort y direccionalidad de las ruedas, la estabilidad al tomar una curva será más eficiente y con esto se logra aprovechar todas las condiciones del vehículo. Además, que ayuda a una obtener una mejor estética del vehículo ya que se bajará a una distancia ideal con el suelo.',
+        title2: 'Tiempo de vida',
+        details2: [ 'El fabricante estima una duración de amortiguadores BLISTEIN de por vida, según su uso, mantenimiento y tipo de producto.',
+        'Garantía',
+        'Tiempo de vida',
+        'El fabricante estima una duración de por vida, tomando en consideración el uso y mantenimiento. ',
+        'Garantía',
+        'Garantía de por vida, según modelo. Aplican Restricciones, ver manual de fabricante.',
+        
+        ],
+        video: 'https://www.youtube.com/embed/21wVZpgtDqg',
+        imgs: [ 
+          { id: 1, img: suspension },
+          { id: 2, img: suspension },
+        ],
+        title3: '¿Qué colores manejan?',
+        title4: '¿Qué durabilidad tiene?',
+        details3: 'azul, humo y humo obscuro',
+        details4: '4 a 6 años dependiendo de la exposicion al sol',
+      },
+      colash: [
+        { id: 1, img: suspension },
+        { id: 2, img: suspension },
+        { id: 3, img: suspension },
+        { id: 4, img: suspension },
+        { id: 5, img: suspension },
+        { id: 6, img: suspension },
+        { id: 7, img: suspension },
+        { id: 8, img: suspension },
+      ]
+    },
+    valvulasAlivio:{
+      hero: {
+        logo: logoHome,
+        hero: 'VALVULAS DE ALIVIO',
+        bg: valvulas
+      },
+      aboutSlider:{
+        title: '¿QUE ES?',
+        details: 'Una válvula de alivio o Wastegate es un dispositivo integrado en un turbocompresor que controla la presión de sobrealimentación máxima permitida.  La válvula de descarga es un componente en un turbocompresor que desvía los gases de la turbina. La función principal de la válvula de descarga es regular la presión de sobrealimentación óptima en los sistemas de turbocompresor para proteger el turbocompresor y el motor. El desvío de los gases de escape ajusta la velocidad de la turbina, que en sintonía ajusta la velocidad de rotación del compresor.',
+        imgs: [ 
+          { id: 1, img: valvulas }, 
+          { id: 2, img: valvulas }, 
+          { id: 3, img: valvulas }, 
+        ]
+      },
+      aboutProcess: {
+        title1: '¿Para qué sirve?',
+        details1: 'Su objetivo es evitar una sobrepresión de los gases de escape que mueven el turbo. De lo contrario, cuando llegasen a determinada velocidad podrían dañar el motor o mover el turbo a tantas revoluciones que se acabase rompiendo. La regulación de esta válvula permite determinar la presión máxima de soplado del turbo',
+        title2: 'Tipos de Válvulas',
+        details2: [ '•	Válvula de descarga blow off',
+        'Como es la que expulsa el aire sobrante al exterior, . También suele llamarse válvula de descarga atmosférica, precisamente por lanzar al aire a presión a la atmósfera. Este tipo de válvulas es característica de los sonidos realizados al revolucionar el vehículo ',
+        '•	Válvula de descarga de bypass ',
+        'Una válvula de compresión bypass,  también llamada válvula de recirculación, no saca el aire sobrante fuera. En su caso lo envía a la admisión, pero antes del turbo. Es decir, en la parte de donde el turbo saca el aire para luego presurizarlo y meterlo en el motor. Es importante que lo envíe a un lugar donde el caudalímetro pueda medir bien el aire que entra realmente. De lo contrario la mezcla de aire y combustible será incorrecta.',
+        'Tiempo de vida',
+        'El fabricante estima una duración de la válvula de 5 años, tomando en cuenta el buen uso y mantenimiento adecuado.',
+        'Garantía',
+        'Garantía limitada de 6 meses con el fabricante. Aplican Restricciones, ver manual de fabricante.',
+        ],
+        video: 'https://www.youtube.com/embed/21wVZpgtDqg',
+        imgs: [ 
+          { id: 1, img: valvulas },
+          { id: 2, img: valvulas },
+        ],
+        title3: '¿Qué colores manejan?',
+        title4: '¿Qué durabilidad tiene?',
+        details3: 'azul, humo y humo obscuro',
+        details4: '4 a 6 años dependiendo de la exposicion al sol',
+      },
+      colash: [
+        { id: 1, img: valvulas },
+        { id: 2, img: valvulas },
+        { id: 3, img: valvulas },
+        { id: 4, img: valvulas },
+        { id: 5, img: valvulas },
+        { id: 6, img: valvulas },
+        { id: 7, img: valvulas },
+        { id: 8, img: valvulas },
+      ]
+    },
+    wrap:{
+      hero: {
+        logo: logoHome,
+        hero: 'WRAP',
+        bg: wrap
+      },
+      aboutSlider:{
+        title: '¿Que es un wrap o forrado automotriz?',
+        details: 'Una de las tendencias mas populares en el mundo de la personalización de los autos, dentro del tuning de automóviles, es cambiar el color de la pintura por medio del vinil personalizado también conocido como wrapping.El wrapping es el vinilado de un vehículo. Se aplica directamente sobre la pintura original. El objetivo es cambiar la apariencia de tu vehículo sin perder la original, y mantenerlo en perfectas condiciones a su estado original al retirar el vinilo.Básicamente, esta técnica permite cambiar de color la carrocería, pero sin el clásico proceso de pintado, lo que permite que cuando se desee se puede volver al tono original simplemente retirando el material. Una más de las ventajas es que, además de cambiar de color, ciertos vinilos permiten dar textura al vehículo.Igualmente, otra ventaja es que, si no se desea aplicar el vinil por completo, es posible personalizar el automóvil recubriendo solamente los espejos laterales, la parrilla delantera, colocar un diseño, imagenes o el techo, son algunos ejemplos.Otra de las ventajas que se ofrece, es una infinita variedad de colores ya sea en colores mate, brillososo, colores cromo espejo o bien la posibilidad de personalizar el color o los gráficos, algo que sería sumamente costoso o imposible si se hace por medio de la pintura.',
+        imgs: [ 
+          { id: 1, img: wrap }, 
+          { id: 2, img: wrap }, 
+          { id: 3, img: wrap }, 
+        ]
+      },
+      aboutProcess: {
+        title1: '¿Daña mi pintura?',
+        details1: 'No, como se comentó son vinilos especialmente diseñados para la industria automotriz los cuales no dejaran residuos de pegamento  ni dañaran su pintura por el contrario esta se mantendrá mas tiempo intacta de los rayos uv y al momento de retirarlo su pintura aun lucirá como antes de que se aplicara el vinilo',
+        title2: '¿Cuanto me durara?',
+        details2: [ 'EL Wrap para su vehículo profesionalmente aplicado durará entre 3 y 5 años. Cada vinilo tiene sus especificaciones y tiempos de garantía según su categoría.',
+        '¿Necesita cuidados especiales?',
+        'No, es requerido por el fabricante una limpieza en especial sin embargo han salido al mercado productos para alargar la apariencia y durabilidad del mismo además de algunos consejos útiles para su cuidado serían los siguientes',
+        '*evitar la exposición prolongada al sol',
+        '*proteger tu forrado con cerámicos especiales para vinil',
+        'Tengo rayones o abolladuras se notarían tras ser forrado?',
+        'La respuesta es si,La mayoría de casos de este tipo lo mejor es reparar estas imperfecciones para que quede un acabado excelente.En algunos rayones muy superficiales es posible que el vinil cubra el mismo PARA ESTO ES NECESARIO UNA INSPECCION FISICA',
+        '¿Como reparan un golpe  o rayón?',
+        'En estos casos es necesario retirar ese panel completo y volverlo a forrar para siempre dar un resultado espectacular',
+        '¿Con que marcas trabajan?',
+        'Avery dennison,3m, hexis, sunswrap luxury anexar logos',
+        'COMO LAVO MI VEHICULO FORRADO?',
+        'SE PUEDE LAVAR CON AGUA A PRESION ( KARCHER) O TRAPOS HUMEDOS',
+        'NUNCA METER A UN TUNELES Y/O ARCOS DE LAVADO '
+        ],
+        video: 'https://www.youtube.com/embed/21wVZpgtDqg',
+        imgs: [ 
+          { id: 1, img: wrap },
+          { id: 2, img: wrap },
+        ],
+        title3: '¿Qué colores manejan?',
+        title4: '¿Qué durabilidad tiene?',
+        details3: 'azul, humo y humo obscuro',
+        details4: '4 a 6 años dependiendo de la exposicion al sol',
+      },
+      colash: [
+        { id: 1, img: wrap },
+        { id: 2, img: wrap },
+        { id: 3, img: wrap },
+        { id: 4, img: wrap },
+        { id: 5, img: wrap },
+        { id: 6, img: wrap },
+        { id: 7, img: wrap },
+        { id: 8, img: wrap },
       ]
     },
   }

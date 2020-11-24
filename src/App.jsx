@@ -9,7 +9,12 @@ import Aerodinamica from './pages/Aerodinamica';
 import Filtros from './pages/Filtros';
 import Hydrografia from './pages/Hydrografia';
 import PaintProtection from './pages/PaintProtection';
-
+import PinturaRines from './pages/PinturaRines';
+import Detaling from './pages/Detaling';
+import SistemasEscape from './pages/SistemasEscape';
+import SuspensionDeportiva from './pages/SuspensionDeportiva';
+import ValvulasAlivio from './pages/ValvulasAlivio';
+import Wrap from './pages/Wrap';
 
 const App = () => {
   return (
@@ -61,6 +66,54 @@ const App = () => {
             render={
               () => (
                 <PaintProtection />
+              )
+            }
+          />
+          <Route 
+            exact path='/pinturaRines'
+            render={
+              () => (
+                <PinturaRines />
+              )
+            }
+          />
+          <Route 
+            exact path='/detaling'
+            render={
+              () => (
+                <Detaling />
+              )
+            }
+          />
+          <Route 
+            exact path='/sistemasEscape'
+            render={
+              () => (
+                <SistemasEscape />
+              )
+            }
+          />
+          <Route 
+            exact path='/suspensionDeportiva'
+            render={
+              () => (
+                <SuspensionDeportiva />
+              )
+            }
+          />
+          <Route 
+            exact path='/valvulasAlivio'
+            render={
+              () => (
+                <ValvulasAlivio />
+              )
+            }
+          />
+          <Route 
+            exact path='/wrap'
+            render={
+              () => (
+                <Wrap />
               )
             }
           />

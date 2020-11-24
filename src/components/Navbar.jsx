@@ -34,11 +34,12 @@ const Navbar = ( {navbar} ) =>{
                   <li><Link to="/filtros"> {navbar.servicios[2]} </Link></li>
                   <li><Link to="/hydrografia"> {navbar.servicios[3]} </Link></li>
                   <li><Link to="/paintProtection"> {navbar.servicios[4]} </Link></li>
-                  <li><Link to="/"> Servicio </Link></li>
-                  <li><Link to="/"> Servicio </Link></li>
-                  <li><Link to="/"> Servicio </Link></li>
-                  <li><Link to="/"> Servicio </Link></li>
-                  <li><Link to="/"> Servicio </Link></li>
+                  <li><Link to="/pinturaRines"> {navbar.servicios[5]} </Link></li>
+                  <li><Link to="/detaling"> {navbar.servicios[6]} </Link></li>
+                  <li><Link to="/sistemasEscape"> {navbar.servicios[7]} </Link></li>
+                  <li><Link to="/suspensionDeportiva"> {navbar.servicios[8]} </Link></li>
+                  <li><Link to="/valvulasAlivio"> {navbar.servicios[9]} </Link></li>
+                  <li><Link to="/wrap"> {navbar.servicios[10]} </Link></li>
 
                 </ul>        
               </li>
