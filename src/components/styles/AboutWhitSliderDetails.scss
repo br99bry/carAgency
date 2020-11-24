@@ -26,13 +26,33 @@
       font-family: $font-lato;
       line-height: 33px;
     }
+
+    & .AboutWhitSliderDetails__detailsDescription-dots{
+      // @include border();
+      width: 100%;
+      height: 20px;
+      @include flexbox-basic();
+      & div{
+        @include border(black);
+        width: 20px;
+        height: 100%;
+        margin-right: 10px;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      & div:nth-of-type(1){
+        background-color: rgb(156, 156, 156);
+      }
+    }
   }
   
   & .AboutWhitSliderDetails__img{
-    // @include border();
+    // @include border(blue);
     grid-column: 2/3;
     grid-row: 1/2;
-
+    @include flexbox-basic(flex-start);
+    scroll-behavior: smooth;
+    overflow-x: hidden;
     & img{
       width: 100%;
       height: 100%;

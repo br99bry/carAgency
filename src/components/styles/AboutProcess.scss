@@ -33,11 +33,13 @@
 
   & .AbourProcess__video{
     width: 80%;
-    height: 500px;
-    margin-bottom: 100px;
+    height: auto;
+    margin-bottom: 50px;
     & iframe{
       width: 100%;
-      height: 100%;
+      height: 600px;
+      margin-bottom: 30px;
+
     }
   }
 

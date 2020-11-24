@@ -11,7 +11,7 @@ import carHome1 from './assets/img/carHome1.jpg';
 import carHome2 from './assets/img/carHome2.jpg';
 import carHome3 from './assets/img/carHome3.jpg';
 import bgHeroInkingLights from './assets/img/faros.jpg';
-import aerodinamica from './assets/img/aerodinamica.jpg';
+import aerodinamica from './assets/img/services/aerodinamicaYaccesorios/aerodinamicaHero.jpg';
 import filtros from './assets/img/filtros.jpg';
 import hidrografia from './assets/img/hidrografia.jpg';
 import paintProtection from './assets/img/paintProtection.jpg';
@@ -21,10 +21,11 @@ import suspension from './assets/img/suspension.jpg';
 import sistemaEscape from './assets/img/sistemaEscape.png';
 import valvulas from './assets/img/valvulas.jpg';
 import wrap from './assets/img/wrap.jpg';
+import aerodinamicaColash1 from './assets/img/services/aerodinamicaYaccesorios/colash1.jpg';
 
 const initialState = {
   navbar: {
-    links: ['Inicio','Nosotros','Servicios','Contacto','Escribenos'],
+    links: ['Inicio','Nosotros','Servicios','Contacto','Escribenos al:',' +52 55 6319 6673'],
     servicios: ['Entintado de faros', 'Aerodinamica y Accesorios', 'Filtros', 'Hydrografia', 'Paint Protection', 'Pintura en Rines y Calipers', 'Detaling','Sistemas De Escape','Suspension Deportiva','Valvulas De Alivio','Wrap'],
   },
   home: {
@@ -59,8 +60,11 @@ const initialState = {
         title1: '¿PARA QUE SIRVE EL ENTINTADO DE FAROS?',
         details1: 'La mayoría de nosotros sabemos que las luces de los autos tienden a desgastarse, ponerse amarillas o ponerse feas. Es causada principalmente por el polvo y los rayos UV del sol. El teñir sus luces con una película protectora puede evitar este daño y mantenerlas bonitas al mismo tiempo preservando la visibilidad original',
         title2: '¿Cómo lo hacemos?',
-        details2: [ 'UTILIZAMOS UN VINIL FABRICADO ESPECIALMENTE PARA DARLE UN ENTINTADO A TUS FAROS O CALAVERAS EL CUAL NO DAÑA NI DEJA RESIDUO DE PEGAMENTO', 'QUE MARCA UTILIZAMOS PARA ENTINTAR LOS FAROS?', 'Los tintes VViViD están hechos de un material más grueso y resistente, capaz de soportar astillas de roca, el calor de los faros y otros desgastes.' ],
-        video: 'https://www.youtube.com/embed/Zw1rVVgOXnU',
+        details2: [ 'UTILIZAMOS UN VINIL FABRICADO ESPECIALMENTE PARA DARLE UN ENTINTADO A TUS FAROS O CALAVERAS EL CUAL NO DAÑA NI DEJA RESIDUO DE PEGAMENTO',
+         'QUE MARCA UTILIZAMOS PARA ENTINTAR LOS FAROS?',
+          'Los tintes VViViD están hechos de un material más grueso y resistente, capaz de soportar astillas de roca, el calor de los faros y otros desgastes.',
+         ],
+        video: ['https://www.youtube.com/embed/Zw1rVVgOXnU'],
         imgs: [ 
           { id: 1, img: bgHeroInkingLights },
           { id: 2, img: bgHeroInkingLights },
@@ -101,7 +105,7 @@ const initialState = {
         details1: 'Habitualmente se utiliza como superficie de referencia el área frontal del vehículo, obteniéndose a partir de dos partes: por un lado, el conjunto del parabrisas, el cofre y los espejos laterales, y por otro, la parte baja del frente del vehículo, es decir, de la fascia. Las formas suaves de las defensas, retrovisores, faros, etc, mejoran la aerodinámica, esto al no ocupar mucho espacio. Aunque un final del techo o del maletero en esquina y dirigido hacia abajo, como por ejemplo los monovolúmenes, es mejor que un final de techo o maletero redondeado como el de los sedanes',
         title2: 'FUNCION DE ALERONES O SPOILERS EN  TU VEHICULO',
         details2: [ 'los alerones tienen un propósito específico: generar fuerza contra el piso (downforce) gracias al paso del aire. Al hacer que el auto genere una mayor fuerza contra el piso, tendrá mejor agarre, por lo que podrá ir más rápido sin perder estabilidad, sobre todo en las curvas.', '¿Que accesorios ofrecemos para mejorar tu aerodinámica?', 'Contamos con lips, alerones ,parrillas ,estribos ,carcasas de fibra de carbono y muchos accesorios mas','MANEJAMOS UN AMPLIO SURTIDO EN MODIFICACIONES ESTETICAS PARA TU VEHICULO BUSCANDO ASI SIEMPRE OFRECERTE LOS MEJORES ACCESORIOS DEL MERCADO' ],
-        video: 'https://www.youtube.com/embed/21wVZpgtDqg',
+        video: ['https://www.youtube.com/embed/21wVZpgtDqg'],
         imgs: [ 
           { id: 1, img: aerodinamica },
           { id: 2, img: aerodinamica },
@@ -112,7 +116,7 @@ const initialState = {
         details4: '4 a 6 años dependiendo de la exposicion al sol',
       },
       colash: [
-        { id: 1, img: aerodinamica },
+        { id: 1, img: aerodinamicaColash1 },
         { id: 2, img: aerodinamica },
         { id: 3, img: aerodinamica },
         { id: 4, img: aerodinamica },
@@ -153,7 +157,7 @@ const initialState = {
         'Garantía limitada de un año con el fabricante. Aplican Restricciones, ver manual de fabricante.',
 
         ],
-        video: 'https://www.youtube.com/embed/21wVZpgtDqg',
+        video: ['https://www.youtube.com/embed/21wVZpgtDqg'],
         imgs: [ 
           { id: 1, img: filtros },
           { id: 2, img: filtros },
@@ -200,7 +204,7 @@ const initialState = {
         'ESTO DEPENDERA DE LA CANTIDAD Y FORMA DE LAS PIEZAS A REALIZAR LA IMPRESIÓN NUESTRO ESTIMADO VA DESDE 1 HASTA 4 DIAS'
         
         ],
-        video: 'https://www.youtube.com/embed/21wVZpgtDqg',
+        video: ['https://www.youtube.com/embed/21wVZpgtDqg'],
         imgs: [ 
           { id: 1, img: hidrografia },
           { id: 2, img: hidrografia },
@@ -244,7 +248,7 @@ const initialState = {
         '¿DURABILIDAD?',
         'Dependiendo la calidad del vinil podríamos hablar desde 3 hasta 10 años',
         ],
-        video: 'https://www.youtube.com/embed/21wVZpgtDqg',
+        video: ['https://www.youtube.com/embed/21wVZpgtDqg'],
         imgs: [ 
           { id: 1, img: paintProtection },
           { id: 2, img: paintProtection },
@@ -288,7 +292,7 @@ const initialState = {
         '¿PUEDO PINTARLOS DEL COLOR QUE SEA?',
         'CLARO TU IMAGINACION ES EL LIMITE',
         ],
-        video: 'https://www.youtube.com/embed/21wVZpgtDqg',
+        video: ['https://www.youtube.com/embed/21wVZpgtDqg'],
         imgs: [ 
           { id: 1, img: pinturaRines },
           { id: 2, img: pinturaRines },
@@ -364,7 +368,7 @@ const initialState = {
         'Como último paso del auto detailing, se aplica la protección cerámica al automóvil. Esta es una base que protege la pintura del sol. Este recubrimiento cerámico es tan fuerte que sólo puede removerse a través de la abrasión. ',
         'México ha incursionado en el car detailing durante los últimos años con mucho éxito, ya que nuestro país se caracteriza por ser un amante de los autos. Según cifras del IMCO, en 2017 el parque vehicular creció casi 5 veces más que la tasa de población, lo cual representa un área de oportunidad para los empresarios automovilísticos.'
         ],
-        video: 'https://www.youtube.com/embed/21wVZpgtDqg',
+        video: ['https://www.youtube.com/embed/21wVZpgtDqg'],
         imgs: [ 
           { id: 1, img: detaling },
           { id: 2, img: detaling },
@@ -412,7 +416,7 @@ const initialState = {
         'Garantía de por vida. Aplican Restricciones, ver manual de fabricante.',
         
         ],
-        video: 'https://www.youtube.com/embed/21wVZpgtDqg',
+        video: ['https://www.youtube.com/embed/21wVZpgtDqg'],
         imgs: [ 
           { id: 1, img: sistemaEscape },
           { id: 2, img: sistemaEscape },
@@ -460,7 +464,7 @@ const initialState = {
         'Garantía de por vida, según modelo. Aplican Restricciones, ver manual de fabricante.',
         
         ],
-        video: 'https://www.youtube.com/embed/21wVZpgtDqg',
+        video: ['https://www.youtube.com/embed/21wVZpgtDqg'],
         imgs: [ 
           { id: 1, img: suspension },
           { id: 2, img: suspension },
@@ -509,7 +513,7 @@ const initialState = {
         'Garantía',
         'Garantía limitada de 6 meses con el fabricante. Aplican Restricciones, ver manual de fabricante.',
         ],
-        video: 'https://www.youtube.com/embed/21wVZpgtDqg',
+        video: ['https://www.youtube.com/embed/21wVZpgtDqg'],
         imgs: [ 
           { id: 1, img: valvulas },
           { id: 2, img: valvulas },
@@ -564,7 +568,7 @@ const initialState = {
         'SE PUEDE LAVAR CON AGUA A PRESION ( KARCHER) O TRAPOS HUMEDOS',
         'NUNCA METER A UN TUNELES Y/O ARCOS DE LAVADO '
         ],
-        video: 'https://www.youtube.com/embed/21wVZpgtDqg',
+        video: ['https://www.youtube.com/embed/21wVZpgtDqg',],
         imgs: [ 
           { id: 1, img: wrap },
           { id: 2, img: wrap },

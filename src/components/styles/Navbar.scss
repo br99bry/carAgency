@@ -24,6 +24,7 @@
     right: 5%;
     top: 40px;
     z-index: 10;
+    
   }
 }
 
@@ -201,11 +202,12 @@ nav ul li:hover > ul {
 #button-n {
   @include border(white);
   @include flexbox-basic();
-  width: 130px;
+  width: 150px;
   position: relative;
   overflow: hidden;
   cursor: pointer;
   height: 50px;
+  text-align: center;
 }
 
 #button-n a{
@@ -253,8 +255,7 @@ nav ul li:hover > ul {
   .NavbarWrapper .NavbarWrapper__contactButton{
     top: 20px;
     & #button-n{
-      height: 30px;
-      width: 105px;
+      width: 125px;
     }
   }
 }

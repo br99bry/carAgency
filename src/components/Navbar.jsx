@@ -55,7 +55,8 @@ const Navbar = ( {navbar} ) =>{
             <div id="button-n">
               <div id="slideN"></div>
               <Link to="/" > 
-                {navbar.links[4]} 
+                {navbar.links[4]} <br/>
+                {navbar.links[5]} 
               </Link>
             </div>
           </div>
