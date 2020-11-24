@@ -20,7 +20,7 @@ const AboutProcess = ( {data , isVisibleAboutProcessPlusInformationIsActive} ) =
         </p>
       </div>
       <div className="AbourProcess__video">
-        <iframe src="https://www.youtube.com/embed/21wVZpgtDqg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe src={data.video} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
       <div className="AboutProcess__process">
         <h2> {data.title2} </h2>

@@ -30,10 +30,10 @@ const Navbar = ( {navbar} ) =>{
                 <Link to="/">{navbar.links[2]}</Link>
                 <ul className="submenu">
                   <li><Link to="/entintadoDeFaros"> {navbar.servicios[0]} </Link></li>
-                  <li><Link to="/"> Servicio </Link></li>
-                  <li><Link to="/"> Servicio </Link></li>
-                  <li><Link to="/"> Servicio </Link></li>
-                  <li><Link to="/"> Servicio </Link></li>
+                  <li><Link to="/aerodinamica"> {navbar.servicios[1]} </Link></li>
+                  <li><Link to="/filtros"> {navbar.servicios[2]} </Link></li>
+                  <li><Link to="/hydrografia"> {navbar.servicios[3]} </Link></li>
+                  <li><Link to="/paintProtection"> {navbar.servicios[4]} </Link></li>
                   <li><Link to="/"> Servicio </Link></li>
                   <li><Link to="/"> Servicio </Link></li>
                   <li><Link to="/"> Servicio </Link></li>
