@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 import './styles/AboutProcess.scss';
 
@@ -13,10 +12,12 @@ const AboutProcess = ( {data , isVisibleAboutProcessPlusInformationIsActive} ) =
     <>
     <section className="AboutProcess">
       <div className="AboutProcess__details">
-        <h2> {data.title1} </h2>
-        <p> 
-        {data.details1}
-        </p>
+        <h2> {data.title1.toUpperCase()} </h2>
+        {data.details1.map( info => (
+          <p> 
+          {info.charAt(0).toUpperCase()}{info.slice(1).toLowerCase()}
+          </p>
+        ))}
       </div>
       <div className="AbourProcess__video">
         {
@@ -26,12 +27,19 @@ const AboutProcess = ( {data , isVisibleAboutProcessPlusInformationIsActive} ) =
         }
       </div>
       <div className="AboutProcess__process">
-        <h2> {data.title2} </h2>
-        {data.details2.map(details => {
+        {data.theory.map(theory => {
           return (
-            <p> 
-              {details}
-            </p>
+            <>
+            <h2> {theory.title.toUpperCase()} </h2>
+              {theory.description.map( texto => (
+                <>
+                <p key={theory.id} > 
+                  {texto.charAt(0).toUpperCase()}
+                  {texto.slice(1).toLowerCase()}
+                </p>
+                </>
+              ) )  }
+            </>
           )
         })}
       </div>

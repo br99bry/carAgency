@@ -25,7 +25,7 @@ const mapStateToProps = state => {
   return {
     hero: state.services.InkingLights.hero,
     aboutSlider: state.services.InkingLights.aboutSlider,
-    aboutProcess:  state.services.InkingLights.aboutProcess,
+    aboutProcess: state.services.InkingLights.aboutProcess,
     colash: state.services.InkingLights.colash
   }
 }
