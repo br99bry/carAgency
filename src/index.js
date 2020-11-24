@@ -22,6 +22,18 @@ import sistemaEscape from './assets/img/sistemaEscape.png';
 import valvulas from './assets/img/valvulas.jpg';
 import wrap from './assets/img/wrap.jpg';
 import aerodinamicaColash1 from './assets/img/services/aerodinamicaYaccesorios/colash1.jpg';
+import aerodinamicaColash2 from './assets/img/services/aerodinamicaYaccesorios/colash2.jpg';
+import aerodinamicaColash3 from './assets/img/services/aerodinamicaYaccesorios/colash3.jpg';
+import aerodinamicaColash4 from './assets/img/services/aerodinamicaYaccesorios/colash4.jpg';
+import aerodinamicaColash5 from './assets/img/services/aerodinamicaYaccesorios/colash5.jpg';
+import aerodinamicaColash6 from './assets/img/services/aerodinamicaYaccesorios/colash6.jpg';
+import aerodinamicaColash7 from './assets/img/services/aerodinamicaYaccesorios/colash7.jpg';
+import aerodinamicaColash8 from './assets/img/services/aerodinamicaYaccesorios/colash8.jpg';
+import aerodinamicaSlider1 from './assets/img/services/aerodinamicaYaccesorios/slider1.jpg';
+import aerodinamicaSlider2 from './assets/img/services/aerodinamicaYaccesorios/slider2.jpg';
+import aerodinamicaSlider3 from './assets/img/services/aerodinamicaYaccesorios/slider3.jpg';
+import aerodinamicaabout1 from './assets/img/services/aerodinamicaYaccesorios/about1.jpg';
+import aerodinamicaabout2 from './assets/img/services/aerodinamicaYaccesorios/about2.jpg';
 
 const initialState = {
   navbar: {
@@ -95,9 +107,9 @@ const initialState = {
         title: '¿COMO FUNCIONA LA AERODINAMICA EN UN CARRO?',
         details: 'El efecto del aire sobre un coche no es únicamente de oposición al avance. ... Otra forma de atenuar esta fuerza de sustentación es pegar el coche al suelo lo máximo posible, para que la lámina de aire que circula por debajo sea mínima',
         imgs: [ 
-          { id: 1, img: aerodinamica }, 
-          { id: 2, img: aerodinamica }, 
-          { id: 3, img: aerodinamica }, 
+          { id: 1, img: aerodinamicaSlider1 }, 
+          { id: 2, img: aerodinamicaSlider2 }, 
+          { id: 3, img: aerodinamicaSlider3 }, 
         ]
       },
       aboutProcess: {
@@ -107,8 +119,8 @@ const initialState = {
         details2: [ 'los alerones tienen un propósito específico: generar fuerza contra el piso (downforce) gracias al paso del aire. Al hacer que el auto genere una mayor fuerza contra el piso, tendrá mejor agarre, por lo que podrá ir más rápido sin perder estabilidad, sobre todo en las curvas.', '¿Que accesorios ofrecemos para mejorar tu aerodinámica?', 'Contamos con lips, alerones ,parrillas ,estribos ,carcasas de fibra de carbono y muchos accesorios mas','MANEJAMOS UN AMPLIO SURTIDO EN MODIFICACIONES ESTETICAS PARA TU VEHICULO BUSCANDO ASI SIEMPRE OFRECERTE LOS MEJORES ACCESORIOS DEL MERCADO' ],
         video: ['https://www.youtube.com/embed/21wVZpgtDqg'],
         imgs: [ 
-          { id: 1, img: aerodinamica },
-          { id: 2, img: aerodinamica },
+          { id: 1, img: aerodinamicaabout1 },
+          { id: 2, img: aerodinamicaabout2 },
         ],
         title3: '¿Qué colores manejan?',
         title4: '¿Qué durabilidad tiene?',
@@ -117,13 +129,13 @@ const initialState = {
       },
       colash: [
         { id: 1, img: aerodinamicaColash1 },
-        { id: 2, img: aerodinamica },
-        { id: 3, img: aerodinamica },
-        { id: 4, img: aerodinamica },
-        { id: 5, img: aerodinamica },
-        { id: 6, img: aerodinamica },
-        { id: 7, img: aerodinamica },
-        { id: 8, img: aerodinamica },
+        { id: 2, img: aerodinamicaColash2 },
+        { id: 3, img: aerodinamicaColash3 },
+        { id: 4, img: aerodinamicaColash4 },
+        { id: 5, img: aerodinamicaColash5 },
+        { id: 6, img: aerodinamicaColash6 },
+        { id: 7, img: aerodinamicaColash7 },
+        { id: 8, img: aerodinamicaColash8 },
       ]
     },
     filtros:{
