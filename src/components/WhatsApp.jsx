@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDom from 'react-dom';
-import { Link } from 'react-router-dom';
 
 import whats from '../assets/img/whatsapp.png';
 import './styles/WhatsApp.scss'

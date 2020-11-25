@@ -1,9 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 import './styles/HeroOneCar.scss';
-import faros from '../assets/img/faros.jpg';
-import fondoHome from '../assets/img/fondoHome.png';
+
 
 const HeroOneCar = ( {data} ) => {
   return (

@@ -307,6 +307,7 @@ nav ul li:hover > ul {
           & ul{
             & *{
               all: initial;
+              color: white;
             }
             // @include border();
             list-style: none;
