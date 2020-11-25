@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import { connect } from 'react-redux';
 
@@ -8,6 +8,7 @@ import menu from '../assets/img/menu.png'
 
 const Navbar = ( {navbar} ) =>{
   const menuMobileActive = useRef();
+  const navbarStiky = useRef();
   const [menuActive, setMenuActive] = useState(false)
   const menuIsActive = () => {
     if(!menuActive){
@@ -20,9 +21,20 @@ const Navbar = ( {navbar} ) =>{
       setMenuActive(false)
     }
   }
+
+  useEffect( () => {
+    window.addEventListener('scroll', () => {
+      if( window.pageYOffset > 0 ){
+        navbarStiky.current.style.backgroundColor='#191919';
+      }else{
+        navbarStiky.current.style.backgroundColor='transparent';
+      }
+    } )
+  } );
+
   return (
     <>
-      <div className="Navbar">
+      <div ref={navbarStiky} className="Navbar">
         <div className="NavbarWrapper">
           <div  className="menuMobile">
             <img onClick={ () => ( menuIsActive() ) } src={menu} alt="menu"/>
@@ -108,7 +120,7 @@ const Navbar = ( {navbar} ) =>{
             <div id="button-n">
               <div id="slideN"></div>
               <Link to="/" > 
-                {navbar.links[4]} <br/>
+                <span>{navbar.links[4]}</span>
                 {navbar.links[5]} 
               </Link>
             </div>

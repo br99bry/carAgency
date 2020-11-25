@@ -1,6 +1,7 @@
 @import '../../assets/styles/mixins.scss';
 @import '../../assets/styles/vars.scss';
 
+
 .CarrouselHome{
   width: 300%;
   height: 100%;
@@ -26,8 +27,10 @@
       // @include border(red);
       color: white;
       cursor: pointer;
-      margin: 0px 15px;
-      font-size: 2rem;
+      margin: 0px 10px;
+      & img{
+        width: 100%;
+      }
       &:hover{
         transform: scale(0.8);
       }
@@ -63,6 +66,17 @@
   }
 }
 
+@media screen and (max-width: 1400px){
+  .CarrouselHome{
+    & .CarrouselHome__arrow{
+      & span{
+        & img{
+          width: 35px;
+        }
+      }
+    }
+  }
+}
 
 @media screen and (max-width: 1100px){
   .CarrouselHome{
@@ -74,9 +88,7 @@
       bottom: auto;
       top: 40px;
       left: calc(50% - 75px);
-      & span img{
-        width: 40px;
-      }
+
     }
 
     & .CarrouselHome__dots{
@@ -89,11 +101,6 @@
 
 @media screen and (max-width: 550px){
   .CarrouselHome{
-
-    & .CarrouselHome__arrow{
-      // top: 10vh;
-    }
-
     & .CarrouselHome__dots{
       top: 40vh;
     }

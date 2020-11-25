@@ -43,12 +43,6 @@ const Home = ( {home} ) => {
                   {home.homeDarkOptions[0]} 
                 </Link> 
               </div>
-              <div id="button-2"> 
-                <div id="slide"></div>
-                <Link to='/'>
-                  {home.homeDarkOptions[1]} 
-                </Link> 
-              </div>
             </div>
           </div>
         </div>
