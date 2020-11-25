@@ -16,7 +16,12 @@
   height: 100%;
   font-family: $font-oswald;
   font-weight: 400;
-
+  & .menuMobile{
+    display: none;
+  }
+  & .menuMobileContent{
+    display: none;    
+  }
   
   & .NavbarWrapper__contactButton{
     // @include border(white);
@@ -32,10 +37,11 @@
   display: block;
   position: relative;
   top: 50px;
-  left: 50px;
+  left: 45px;
   z-index: 1;
   -webkit-user-select: none;
   user-select: none;
+  color: white;
 }
 
 #menuToggle a {
@@ -57,12 +63,9 @@
   position: absolute;
   top: -7px;
   left: -5px;
-  
   cursor: pointer;
-  
   opacity: 0; 
   z-index: 2; 
-  
   -webkit-touch-callout: none;
 }
 
@@ -124,10 +127,13 @@
   font-size: 22px;
   display: inline-block;
   margin-right: 10px;
-	margin-left: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 1rem;
 }
 .submenu { 
 margin-top: 20px;
+width: 250px;
 }
 .submenu li {
   display: block !important;
@@ -166,7 +172,7 @@ nav ul ul {
 	display: none;
   position: absolute;
   z-index: 2;
-  top: 40px;
+  top: 15px;
   left: 0;
   padding: 0;
   background: #151515;
@@ -194,6 +200,10 @@ nav ul li:hover > ul {
 
   nav a {
     line-height: 65px;
+  }
+  nav ul ul {
+
+    top: 26px;
   }
 }
 
@@ -261,26 +271,88 @@ nav ul li:hover > ul {
 }
 
 @media screen and (max-width: 750px){
-  #menuToggle input:checked ~ ul{
-    top: 300px;
-    transform: rotate(270deg);
-    left: -30px;
+  #menuToggle{
+    display: none;
   }
 
-  #menu{
-  background: #151515;
-  }
+  .Navbar{
+    & .NavbarWrapper{
+      & .menuMobile{
+        // @include border();
+        display: block;
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        z-index: 1;
+        top: 10px;
+        left: 10px;
+        cursor: pointer;
+        & img{
+          width: 100%;
+          height: 100%;
+        }
 
-  #menu > li{
-    transform: rotate(90deg);
-  }
+        & .menuMobileContent{
+          // @include border();
+          display: block;
+          position: fixed;
+          width: calc(100%);
+          height: auto;
+          z-index: -1;
+          top: 0px;
+          left: -101%;
+          cursor: pointer;
+          background-color: #000000;
+          @include flexbox-basic();
+          & ul{
+            & *{
+              all: initial;
+            }
+            // @include border();
+            list-style: none;
+            margin-top: 60px;
+            width: 80%;
+            padding: 0;
+            & li{
+              // @include border();
+            
+              // @include flexbox-basic();
+              margin: 0;
+              padding: 0;
+              color: white;
+              height: 50px;
+              cursor: pointer;
+              display: block;
+              height: auto;
+              line-height: 30px;
+              font-size: 1rem;
+              font-family: $font-oswald;
+              & a{
+                font-family: $font-oswald;
+                font-size: 1rem;
+                margin: 0;
+                padding: 0;
+              }
 
-  .submenu{
-    // display: block;
-    left: 55px;
-    top: 10px;
-    & li a{
-      transform: rotate(270deg) !important;
+              & ul{
+                display: none;
+              }
+              &:hover:nth-of-type(3) ul{
+                display: block;
+                list-style: disc;
+                margin-left: 20px;
+              }
+            }
+          }
+        }
+        
+
+        & .menuMobileContentActive{
+          transition-duration: 450ms;
+          transform: translateX(100%);
+        }
+      }
     }
   }
+
 }
