@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
+import { HashLink as Link } from 'react-router-hash-link';
 import { connect } from 'react-redux';
-import { Link } from 'react-router-dom';
 
 import './styles/Navbar.scss';
 
@@ -29,12 +29,12 @@ const Navbar = ( {navbar} ) =>{
           
           <nav ref={menuMobileActive} className="menuMobileContent">
             <ul>
-            <li>
+            <li onClick={ () => ( menuIsActive() ) } >
               <Link to="/">
                 {navbar.links[0]}
               </Link>
               </li>
-              <li>
+              <li onClick={ () => ( menuIsActive() ) } >
               <Link to="/">
                 {navbar.links[1]}
               </Link>
@@ -42,20 +42,20 @@ const Navbar = ( {navbar} ) =>{
               <li>
                 {navbar.links[2]}
                 <ul className="submenu">
-                  <li><Link to="/entintadoDeFaros"> {navbar.servicios[0]} </Link></li>
-                  <li><Link to="/aerodinamica"> {navbar.servicios[1]} </Link></li>
-                  <li><Link to="/filtros"> {navbar.servicios[2]} </Link></li>
-                  <li><Link to="/hydrografia"> {navbar.servicios[3]} </Link></li>
-                  <li><Link to="/paintProtection"> {navbar.servicios[4]} </Link></li>
-                  <li><Link to="/pinturaRines"> {navbar.servicios[5]} </Link></li>
-                  <li><Link to="/detaling"> {navbar.servicios[6]} </Link></li>
-                  <li><Link to="/sistemasEscape"> {navbar.servicios[7]} </Link></li>
-                  <li><Link to="/suspensionDeportiva"> {navbar.servicios[8]} </Link></li>
-                  <li><Link to="/valvulasAlivio"> {navbar.servicios[9]} </Link></li>
-                  <li><Link to="/wrap"> {navbar.servicios[10]} </Link></li>
+                  <li onClick={ () => ( menuIsActive() ) } ><Link to="/entintadoDeFaros#servicesInicio"> {navbar.servicios[0]} </Link></li>
+                  <li onClick={ () => ( menuIsActive() ) } ><Link to="/aerodinamica#servicesInicio"> {navbar.servicios[1]} </Link></li>
+                  <li onClick={ () => ( menuIsActive() ) } ><Link to="/filtros#servicesInicio"> {navbar.servicios[2]} </Link></li>
+                  <li onClick={ () => ( menuIsActive() ) } ><Link to="/hydrografia#servicesInicio"> {navbar.servicios[3]} </Link></li>
+                  <li onClick={ () => ( menuIsActive() ) } ><Link to="/paintProtection#servicesInicio"> {navbar.servicios[4]} </Link></li>
+                  <li onClick={ () => ( menuIsActive() ) } ><Link to="/pinturaRines#servicesInicio"> {navbar.servicios[5]} </Link></li>
+                  <li onClick={ () => ( menuIsActive() ) } ><Link to="/detaling#servicesInicio"> {navbar.servicios[6]} </Link></li>
+                  <li onClick={ () => ( menuIsActive() ) } ><Link to="/sistemasEscape#servicesInicio"> {navbar.servicios[7]} </Link></li>
+                  <li onClick={ () => ( menuIsActive() ) } ><Link to="/suspensionDeportiva#servicesInicio"> {navbar.servicios[8]} </Link></li>
+                  <li onClick={ () => ( menuIsActive() ) } ><Link to="/valvulasAlivio#servicesInicio"> {navbar.servicios[9]} </Link></li>
+                  <li onClick={ () => ( menuIsActive() ) } ><Link to="/wrap#servicesInicio"> {navbar.servicios[10]} </Link></li>
                 </ul>         
               </li>
-              <li>
+              <li onClick={ () => ( menuIsActive() ) } >
               <Link to="/">
                 {navbar.links[3]}
               </Link>
@@ -63,7 +63,7 @@ const Navbar = ( {navbar} ) =>{
             </ul>
           </nav>
           </div>
-          <nav role="navigation">
+          <nav role="navigation"  id="menuDesk">
             <div id="menuToggle" className="NavbarWrapper__nav-menuToggle" >
             <input type="checkbox" />
             <span></span>
@@ -83,17 +83,17 @@ const Navbar = ( {navbar} ) =>{
               <li>
                 {navbar.links[2]}
                 <ul className="submenu">
-                  <li><Link to="/entintadoDeFaros"> {navbar.servicios[0]} </Link></li>
-                  <li><Link to="/aerodinamica"> {navbar.servicios[1]} </Link></li>
-                  <li><Link to="/filtros"> {navbar.servicios[2]} </Link></li>
-                  <li><Link to="/hydrografia"> {navbar.servicios[3]} </Link></li>
-                  <li><Link to="/paintProtection"> {navbar.servicios[4]} </Link></li>
-                  <li><Link to="/pinturaRines"> {navbar.servicios[5]} </Link></li>
-                  <li><Link to="/detaling"> {navbar.servicios[6]} </Link></li>
-                  <li><Link to="/sistemasEscape"> {navbar.servicios[7]} </Link></li>
-                  <li><Link to="/suspensionDeportiva"> {navbar.servicios[8]} </Link></li>
-                  <li><Link to="/valvulasAlivio"> {navbar.servicios[9]} </Link></li>
-                  <li><Link to="/wrap"> {navbar.servicios[10]} </Link></li>
+                  <li><Link to="/entintadoDeFaros#servicesInicio"> {navbar.servicios[0]} </Link></li>
+                  <li><Link to="/aerodinamica#servicesInicio"> {navbar.servicios[1]} </Link></li>
+                  <li><Link to="/filtros#servicesInicio"> {navbar.servicios[2]} </Link></li>
+                  <li><Link to="/hydrografia#servicesInicio"> {navbar.servicios[3]} </Link></li>
+                  <li><Link to="/paintProtection#servicesInicio"> {navbar.servicios[4]} </Link></li>
+                  <li><Link to="/pinturaRines#servicesInicio"> {navbar.servicios[5]} </Link></li>
+                  <li><Link to="/detaling#servicesInicio"> {navbar.servicios[6]} </Link></li>
+                  <li><Link to="/sistemasEscape#servicesInicio"> {navbar.servicios[7]} </Link></li>
+                  <li><Link to="/suspensionDeportiva#servicesInicio"> {navbar.servicios[8]} </Link></li>
+                  <li><Link to="/valvulasAlivio#servicesInicio"> {navbar.servicios[9]} </Link></li>
+                  <li><Link to="/wrap#servicesInicio"> {navbar.servicios[10]} </Link></li>
                 </ul>        
               </li>
               <li>

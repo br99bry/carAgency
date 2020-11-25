@@ -123,17 +123,16 @@
 }
 
 #menu li {
-  padding:  0;
-  font-size: 22px;
+  padding: 0; 
   display: inline-block;
   margin-right: 10px;
   margin-left: 10px;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 .submenu { 
-margin-top: 20px;
-width: 250px;
+width: 280px;
+top: 35px;
 }
 .submenu li {
   display: block !important;
@@ -151,35 +150,33 @@ width: 250px;
   transform: none;
 }
 
-nav a {
+#menuDesk a {
 	color:#FFF;
-	font-size:20px;
 	line-height: 60px;
 	text-decoration:none;
 }
 
-nav a:hover { 
+#menuDesk a:hover { 
 	background-color: #000000; 
 }
 
 /* Hide Dropdowns by Default */
 
-nav ul li:nth-of-type(3){
+#menuDesk ul li:nth-of-type(3){
   position: relative;
 }
 
-nav ul ul {
+#menuDesk ul ul {
 	display: none;
   position: absolute;
   z-index: 2;
-  top: 15px;
   left: 0;
   padding: 0;
   background: #151515;
 }
 	
 /* Display Dropdowns on Hover */
-nav ul li:hover > ul {
+#menuDesk ul li:hover > ul {
 	display:inherit; 
 }
 
@@ -198,12 +195,9 @@ nav ul li:hover > ul {
     top: 30px;
   }
 
-  nav a {
-    line-height: 65px;
-  }
-  nav ul ul {
-
-    top: 26px;
+  
+  #menuDesk ul ul {
+    top: 15px;
   }
 }
 
@@ -253,6 +247,10 @@ nav ul li:hover > ul {
     & .NavbarWrapper{
       width: 100%;
       & *{
+        font-size: 1rem;
+      }
+
+      #menu li{
         font-size: 1rem;
       }
 
@@ -316,13 +314,12 @@ nav ul li:hover > ul {
             padding: 0;
             & li{
               // @include border();
-            
               // @include flexbox-basic();
+              cursor: pointer;
               margin: 0;
               padding: 0;
               color: white;
               height: 50px;
-              cursor: pointer;
               display: block;
               height: auto;
               line-height: 30px;
@@ -333,10 +330,14 @@ nav ul li:hover > ul {
                 font-size: 1rem;
                 margin: 0;
                 padding: 0;
+                cursor: pointer;
               }
 
               & ul{
                 display: none;
+                & li a{
+                  cursor: pointer;
+                }
               }
               &:hover:nth-of-type(3) ul{
                 display: block;
