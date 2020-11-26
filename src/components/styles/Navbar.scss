@@ -1,16 +1,9 @@
 @import '../../assets/styles/mixins.scss';
 @import '../../assets/styles/vars.scss';
 
-// notas
-// menu text shadow
-// home hero title shadow
-// contact button 1 linea y en responsive quitar texto y 15px font
-// filter opacity de home en 80%
 // animaciones a menu 
-// en service filter opacity hero
-// fuente de parrafos de 15 px en servicios
-// fuente de titulos 1.4rem en servicios 
 // footer
+
 .Navbar{
   // @include border();
   width: 100vw;
@@ -142,26 +135,24 @@
   margin-left: 10px;
   cursor: pointer;
   font-size: 17px;
+  text-shadow: 4px 2px 3px rgba(150, 150, 150, 1);      
+
+  line-height: 60px;
+  
+  
+  &:nth-child(3){
+    padding: 0 10px;
+  }
+  &:hover{
+    background-color: #191919; 
+    
+  }
   & a{
     font-size: 17px;
+    text-shadow: 0 0 6px #000;
   }
 }
-.submenu { 
-width: 280px;
-top: 25px;
-}
-.submenu li {
-  display: block !important;
 
-  & a {
-    line-height: 0px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    &:hover{
-      background-color: transparent;
-    }
-  }
-}
 #menuToggle input:checked ~ ul {
   transform: none;
 }
@@ -169,7 +160,9 @@ top: 25px;
 #menuDesk a {
 	color:#FFF;
 	line-height: 60px;
-	text-decoration:none;
+  text-decoration:none;
+  text-shadow: 4px 2px 3px rgba(150, 150, 150, 1) !important;      
+  
 }
 
 #menuDesk a:hover { 
@@ -196,6 +189,24 @@ top: 25px;
 	display:inherit; 
 }
 
+.submenu { 
+  width: 280px;
+  top: 47px;
+  }
+  .submenu li {
+    display: block !important;
+    text-shadow: none !important;
+    & a {
+      text-shadow: none !important;
+      line-height: 0px;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      &:hover{
+        background-color: transparent;
+      }
+    }
+  }
+
 @media (max-width: 1100px){
   .submenu { 
     margin-top: 5px;
@@ -213,7 +224,7 @@ top: 25px;
 
   
   #menuDesk ul ul {
-    top: 15px;
+    top: 40px;
   }
 }
 
@@ -290,6 +301,43 @@ top: 25px;
 }
 
 @media screen and (max-width: 750px){
+
+  .ham {
+    color: white;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .hamRotate.active {
+    transform: rotate(45deg);
+  }
+  .hamRotate180.active {
+    transform: rotate(180deg);
+  }
+  .line {
+    fill:none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke:rgb(255, 255, 255);
+    stroke-width:5.5;
+    stroke-linecap:round;
+  }
+  .ham1 .top {
+    stroke-dasharray: 40 139;
+  }
+  .ham1 .bottom {
+    stroke-dasharray: 40 180;
+  }
+  .ham1.active .top {
+    stroke-dashoffset: -98px;
+  }
+  .ham1.active .bottom {
+    stroke-dashoffset: -138px;
+  }
+
   #menuToggle{
     display: none;
   }
@@ -311,6 +359,8 @@ top: 25px;
           height: 100%;
         }
 
+        
+
         & .menuMobileContent{
           // @include border();
           display: block;
@@ -330,7 +380,7 @@ top: 25px;
             }
             // @include border();
             list-style: none;
-            margin-top: 60px;
+            margin-top: 80px;
             width: 80%;
             padding: 0;
             & li{

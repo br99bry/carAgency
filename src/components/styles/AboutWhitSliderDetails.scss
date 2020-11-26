@@ -16,15 +16,16 @@
     grid-row: 1/2;
     padding: 5% 10%;
     & h2{
-      font-size: 2rem;
+      font-size: 35px;
       font-weight: bold;
       font-family: $font-oswald;
     }
     & p{
-      font-size: 1.5rem;
+      font-size: 16px;
       letter-spacing: 2px;
       font-family: $font-lato;
       line-height: 33px;
+      margin-bottom: 40px;
     }
 
     & .AboutWhitSliderDetails__detailsDescription-dots{

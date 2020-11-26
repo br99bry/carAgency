@@ -32,9 +32,22 @@
       top: 50%;
       left: 10%;
       z-index: 2;
+      animation-duration: 500ms;
+      animation-name: homeDetailsDarkIn;
+      animation-timing-function: ease-out;
+      
+      @keyframes homeDetailsDarkIn{
+        0%{
+          left: -250%;
+        }
+        100%{
+          left: 10%;
+        }
+      }
 
       & > h1{
         // @include border(red);
+        // transform: translateX(10px);
         color: white;
         font-size: 2.8rem;
         font-family: $font-oswald;
@@ -42,8 +55,8 @@
         margin: 0;
         letter-spacing: 7px;
         margin-bottom: 50px;
-      }
-      & .Home__dark-details-options{
+        text-shadow: 4px 2px 3px rgba(150, 150, 150, 1);      }
+        & .Home__dark-details-options{
         // @include border(blue);
         width: 60%;
         display: grid;
@@ -110,6 +123,18 @@
         position: static;
         margin: 0 auto;
         width: 100%;
+        animation-duration: 850ms;
+        animation-timing-function: ease-out;
+        animation-name: homeDarkDetailsMobileIn;
+
+        @keyframes homeDarkDetailsMobileIn{
+          0%{
+            transform: translateX(-100%);
+          }
+          100%{
+            transform: translateX(0%);
+          }
+        }
         & h1{
           font-size: 1.5rem;
           text-align: center;
