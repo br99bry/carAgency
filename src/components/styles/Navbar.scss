@@ -173,7 +173,7 @@ top: 25px;
 }
 
 #menuDesk a:hover { 
-	background-color: #000000; 
+	background-color: #191919; 
 }
 
 /* Hide Dropdowns by Default */
@@ -188,7 +188,7 @@ top: 25px;
   z-index: 2;
   left: 0;
   padding: 0;
-  background: #151515;
+  background: #191919;
 }
 	
 /* Display Dropdowns on Hover */
@@ -319,9 +319,9 @@ top: 25px;
           height: auto;
           z-index: -1;
           top: 0px;
-          left: -101%;
+          left: -100%;
           cursor: pointer;
-          background-color: #000000;
+          background-color: #191919;
           @include flexbox-basic();
           & ul{
             & *{

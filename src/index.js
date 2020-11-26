@@ -16,11 +16,11 @@ import filtros from './assets/img/filtros.jpg';
 import hidrografia from './assets/img/hidrografia.jpg';
 import paintProtection from './assets/img/paintProtection.jpg';
 import pinturaRines from './assets/img/pinturaRines.jpg';
-import detaling from './assets/img/detaling.jpg';
 import suspension from './assets/img/suspension.jpg';
 import sistemaEscape from './assets/img/sistemaEscape.png';
 import valvulas from './assets/img/valvulas.jpg';
 import wrap from './assets/img/wrap.jpg';
+// imagenes del servicio de aerodinamica
 import aerodinamicaColash1 from './assets/img/services/aerodinamicaYaccesorios/colash1.jpg';
 import aerodinamicaColash2 from './assets/img/services/aerodinamicaYaccesorios/colash2.jpg';
 import aerodinamicaColash3 from './assets/img/services/aerodinamicaYaccesorios/colash3.jpg';
@@ -34,6 +34,22 @@ import aerodinamicaSlider2 from './assets/img/services/aerodinamicaYaccesorios/s
 import aerodinamicaSlider3 from './assets/img/services/aerodinamicaYaccesorios/slider3.jpg';
 import aerodinamicaabout1 from './assets/img/services/aerodinamicaYaccesorios/about1.jpg';
 import aerodinamicaabout2 from './assets/img/services/aerodinamicaYaccesorios/about2.jpg';
+// imagenes del servicio de detaling
+import detailingAbout1 from './assets/img/services/detaling/about1.jpg';
+import detailingAbout2 from './assets/img/services/detaling/about2.jpg';
+import detalingColash1 from './assets/img/services/detaling/colash1.jpg';
+import detalingColash2 from './assets/img/services/detaling/colash2.jpg';
+import detalingColash3 from './assets/img/services/detaling/colash3.jpg';
+import detalingColash4 from './assets/img/services/detaling/colash4.jpg';
+import detalingColash5 from './assets/img/services/detaling/colash5.jpg';
+import detalingColash6 from './assets/img/services/detaling/colash6.jpg';
+import detalingColash7 from './assets/img/services/detaling/colash7.jpg';
+import detalingColash8 from './assets/img/services/detaling/colash8.jpg';
+import detalingSlider1 from './assets/img/services/detaling/slider1.jpg';
+import detalingSlider2 from './assets/img/services/detaling/slider2.jpg';
+import detalingSlider3 from './assets/img/services/detaling/slider3.jpg';
+import detalingHero from './assets/img/services/detaling/detalingHero.jpg';
+
 
 const initialState = {
   navbar: {
@@ -377,15 +393,15 @@ const initialState = {
       hero: {
         logo: logoHome,
         hero: 'DETALING',
-        bg: detaling
+        bg: detalingHero
       },
       aboutSlider:{
         title: '¿QUE ES EL DETAILING?',
         details: 'El amor hacia tu vehículo puede ser tan grande que el Car Detailing sea tu único pensamiento. Y es que no hay nada más satisfactorio que tener tu auto en perfectas condiciones y lo hagas lucir como nuevo en cada momento. El “Detailing” o “Detallado” es el conjunto de técnicas y procesos especializados y destinados a la limpieza, rejuvenecimiento y protección de las distintas superficies de un vehículo. La utilización de técnicas, procesos y productos adecuados marcan la diferencia entre una simple limpieza y un verdadero resultado “Show Car” o coche de exposición, ya que este el objetivo primordial de PAINT EXPLOSION. Una  correcta limpieza pasa por el uso de las herramientas y productos adecuados, que no sean agresivos para los materiales. Eliminar suciedad es relativamente fácil, pero realizarlo sin rayar o arañar la pintura se requiere paciencia con la tecnica adecuada, con ello lograremos que además  que brille lograremos que tu destaque a lado de otros ya que a rejuvenecido. El rejuvenecimiento se refiere a la recuperación de ese aspecto de nuevo mediante diferentes procesos dependiendo del tipo de superficie, como el pulido de la pintura hasta el nutrido de asientos de cuero, gomas, etc….',
         imgs: [ 
-          { id: 1, img: detaling }, 
-          { id: 2, img: detaling }, 
-          { id: 3, img: detaling }, 
+          { id: 1, img: detalingSlider1 }, 
+          { id: 2, img: detalingSlider2 }, 
+          { id: 3, img: detalingSlider3 }, 
         ]
       },
       aboutProcess: {
@@ -406,8 +422,8 @@ const initialState = {
         ],
         video: ['https://www.youtube.com/embed/21wVZpgtDqg'],
         imgs: [ 
-          { id: 1, img: detaling },
-          { id: 2, img: detaling },
+          { id: 1, img: detailingAbout1 },
+          { id: 2, img: detailingAbout2 },
         ],
         title3: '¿Qué colores manejan?',
         title4: '¿Qué durabilidad tiene?',
@@ -415,14 +431,14 @@ const initialState = {
         details4: '4 a 6 años dependiendo de la exposicion al sol',
       },
       colash: [
-        { id: 1, img: detaling },
-        { id: 2, img: detaling },
-        { id: 3, img: detaling },
-        { id: 4, img: detaling },
-        { id: 5, img: detaling },
-        { id: 6, img: detaling },
-        { id: 7, img: detaling },
-        { id: 8, img: detaling },
+        { id: 1, img: detalingColash1 },
+        { id: 2, img: detalingColash2 },
+        { id: 3, img: detalingColash3 },
+        { id: 4, img: detalingColash4 },
+        { id: 5, img: detalingColash5 },
+        { id: 6, img: detalingColash6 },
+        { id: 7, img: detalingColash7 },
+        { id: 8, img: detalingColash8 },
       ]
     },
     sistemasEscape:{
