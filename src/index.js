@@ -20,6 +20,16 @@ import suspension from './assets/img/suspension.jpg';
 import sistemaEscape from './assets/img/sistemaEscape.png';
 import valvulas from './assets/img/valvulas.jpg';
 import wrap from './assets/img/wrap.jpg';
+// imagenes del servicio de fatos
+import farosHero from './assets/img/services/farosEntintados/farosHero.jpg';
+import farosslider1 from './assets/img/services/farosEntintados/slider1.jpg';
+import farosslider2 from './assets/img/services/farosEntintados/slider2.jpg';
+import farosslider3 from './assets/img/services/farosEntintados/slider3.jpg';
+import farosabout1 from './assets/img/services/farosEntintados/about1.jpg';
+import farosabout2 from './assets/img/services/farosEntintados/about2.jpg';
+import faroscolash1 from './assets/img/services/farosEntintados/colash1.jpg';
+import faroscolash2 from './assets/img/services/farosEntintados/colash2.jpg';
+import faroscolash3 from './assets/img/services/farosEntintados/colash3.jpg';
 // imagenes del servicio de aerodinamica
 import aerodinamicaColash1 from './assets/img/services/aerodinamicaYaccesorios/colash1.jpg';
 import aerodinamicaColash2 from './assets/img/services/aerodinamicaYaccesorios/colash2.jpg';
@@ -86,15 +96,15 @@ const initialState = {
       hero: {
         logo: logoHome,
         hero: 'ENTINTADO DE FAROS',
-        bg: bgHeroInkingLights
+        bg: farosHero
       },
       aboutSlider:{
         title: '¿Qué es?',
         details: 'Es un FILTRO de alto flujo o de alto rendimiento para un vehículo, es un aditamento que esta hecho de los mejores materiales, implementando elementos como algodón, mallas y una combinación de aceite con algodón, logrando un mayor bloqueo en la entrada de polvo, permitiendo en flujo de aire más completo y limpio obteniendo un envío de alto flujo de aire, restringiendo la anticontaminación del motor',
         imgs: [ 
-          { id: 1, img: bgHeroInkingLights }, 
-          { id: 2, img: bgHeroInkingLights }, 
-          { id: 3, img: bgHeroInkingLights }, 
+          { id: 1, img: farosslider1 }, 
+          { id: 2, img: farosslider2 }, 
+          { id: 3, img: farosslider3 }, 
         ]
       },
       aboutProcess: {
@@ -112,8 +122,8 @@ const initialState = {
          ],
         video: ['https://www.youtube.com/embed/Zw1rVVgOXnU'],
         imgs: [ 
-          { id: 1, img: bgHeroInkingLights },
-          { id: 2, img: bgHeroInkingLights },
+          { id: 1, img: farosabout1 },
+          { id: 2, img: farosabout2 },
         ],
         title3: '¿Qué colores manejan?',
         title4: '¿Qué durabilidad tiene?',
@@ -121,14 +131,14 @@ const initialState = {
         details4: '4 a 6 años dependiendo de la exposicion al sol',
       },
       colash: [
-        { id: 1, img: bgHeroInkingLights },
-        { id: 2, img: bgHeroInkingLights },
-        { id: 3, img: bgHeroInkingLights },
-        { id: 4, img: bgHeroInkingLights },
-        { id: 5, img: bgHeroInkingLights },
-        { id: 6, img: bgHeroInkingLights },
-        { id: 7, img: bgHeroInkingLights },
-        { id: 8, img: bgHeroInkingLights },
+        { id: 1, img: faroscolash1 },
+        { id: 2, img: faroscolash2 },
+        { id: 3, img: faroscolash3 },
+        { id: 4, img: faroscolash2 },
+        { id: 5, img: faroscolash1 },
+        { id: 6, img: faroscolash2 },
+        { id: 7, img: faroscolash3 },
+        { id: 8, img: faroscolash3 },
       ]
     },
     aerodinamica:{

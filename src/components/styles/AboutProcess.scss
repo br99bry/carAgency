@@ -125,6 +125,11 @@
 
 @media screen and (max-width: 1100px){
   .AboutProcess{
+    & .AbourProcess__video{
+      & iframe{
+        height: 400px;
+      }
+    }
     & .AboutProcess__plusInformation{
       & .AboutProcess__plusInformation-quiz1,
       & .AboutProcess__plusInformation-quiz2{
@@ -149,7 +154,11 @@
 @media screen and (max-width: 600px){
   .AboutProcess{
     padding-bottom: 0px;
-
+    & .AbourProcess__video{
+      & iframe{
+        height: 300px;
+      }
+    }
     & .AboutProcess__details,
     & .AboutProcess__process{
       width: 85%;
