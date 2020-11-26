@@ -68,6 +68,19 @@ const initialState = {
       ],
     },
   },
+  about: {
+    imgHero: detalingHero,
+    decorate: aerodinamica,
+    title: 'Tiutlo',
+    details: 'acerca de nosotros',
+    lista: [ 
+      { id: 1, item: 'hola' },
+      { id: 2, item: 'hola' },
+      { id: 3, item: 'hola' },
+      { id: 4, item: 'hola' },
+      { id: 5, item: 'hola' }, 
+    ]
+  },
   services: {
     InkingLights:{
       hero: {

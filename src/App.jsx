@@ -4,6 +4,7 @@ import './App.scss';
 
 import Layout from './components/Layout';
 import Home from './pages/Home';
+import About from './pages/About';
 import InkingLights from './pages/InkingLights';
 import Aerodinamica from './pages/Aerodinamica';
 import Filtros from './pages/Filtros';
@@ -26,6 +27,14 @@ const App = () => {
             render={
               () => (
                 <Home />
+              )
+            }
+          />
+          <Route
+            exact path='/nosotros'
+            render={
+              () => (
+                <About />
               )
             }
           />
