@@ -249,7 +249,7 @@ const initialState = {
             description: ['Garantía limitada de un año con el fabricante. Aplican Restricciones, ver manual de fabricante.']
           }
         ],
-        video: ['https://www.youtube.com/embed/21wVZpgtDqg'],
+        video: ['https://www.youtube.com/embed/yMeFHshRH6Y','https://www.youtube.com/embed/TvnMPW-BRU8','https://www.youtube.com/embed/_5stjJi53QM','https://www.youtube.com/embed/wf3ABF7TPKo'],
         imgs: [ 
           { id: 1, img: filtros },
           { id: 2, img: filtros },
@@ -259,6 +259,40 @@ const initialState = {
         details3: 'azul, humo y humo obscuro',
         details4: '4 a 6 años dependiendo de la exposicion al sol',
       },
+      table: [
+        {
+          id: 1,
+          text: 'Vehículos que aplica',
+        },
+        {
+          id: 2,
+          text: 'Todos con restricciones por modelo y año del vehículo'
+        },
+        {
+          id: 3,
+          text: 'Instalación'
+        },
+        {
+          id: 4,
+          text: 'Si aplica'
+        },
+        {
+          id: 5,
+          text: 'Garantía'
+        },
+        {
+          id: 6,
+          text: 'Fabricante 1 año'
+        },
+        {
+          id: 7,
+          text: 'Tiempo Aproximado de Instalación'
+        },
+        {
+          id: 8,
+          text: '1 a 3 horas según modelo'
+        }
+      ],
       colash: [
         { id: 1, img: filtros },
         { id: 2, img: filtros },

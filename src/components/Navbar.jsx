@@ -15,11 +15,11 @@ const Navbar = ( {navbar} ) =>{
   const menuIsActive = () => {
     menuAnimate.current.classList.toggle('active');
     if(!menuActive){
-      console.log(menuMobileActive.current.classList)
+      // console.log(menuMobileActive.current.classList)
       menuMobileActive.current.style.transform='translateX(100%)'
       setMenuActive(true)
     }else{
-      console.log(menuMobileActive.current.classList)
+      // console.log(menuMobileActive.current.classList)
       menuMobileActive.current.style.transform='translateX(-100%)'
       setMenuActive(false)
     }
