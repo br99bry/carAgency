@@ -192,10 +192,6 @@ const initialState = {
           { id: 1, img: aerodinamicaabout1 },
           { id: 2, img: aerodinamicaabout2 },
         ],
-        title3: '¿Qué colores manejan?',
-        title4: '¿Qué durabilidad tiene?',
-        details3: 'azul, humo y humo obscuro',
-        details4: '4 a 6 años dependiendo de la exposicion al sol',
       },
       colash: [
         { id: 1, img: aerodinamicaColash1 },
@@ -254,10 +250,8 @@ const initialState = {
           { id: 1, img: filtros },
           { id: 2, img: filtros },
         ],
-        title3: '¿Qué colores manejan?',
-        title4: '¿Qué durabilidad tiene?',
-        details3: 'azul, humo y humo obscuro',
-        details4: '4 a 6 años dependiendo de la exposicion al sol',
+        titleColaborate: 'FILTROS',
+        detailColaborate: 'H  & PERFORMANCE: busca tener las mejores marcas para atender adecuadamente la satisfacción de nuestros clientes, por tal razón hemos elegido trabajar con K&N.'
       },
       table: [
         {
@@ -344,10 +338,6 @@ const initialState = {
           { id: 1, img: hidrografia },
           { id: 2, img: hidrografia },
         ],
-        title3: '¿Qué colores manejan?',
-        title4: '¿Qué durabilidad tiene?',
-        details3: 'azul, humo y humo obscuro',
-        details4: '4 a 6 años dependiendo de la exposicion al sol',
       },
       colash: [
         { id: 1, img: hidrografia },
@@ -390,15 +380,11 @@ const initialState = {
             description: ['Dependiendo la calidad del vinil podríamos hablar desde 3 hasta 10 años']
           }
         ],
-        video: ['https://www.youtube.com/embed/21wVZpgtDqg'],
+        video: ['https://www.youtube.com/embed/qxiKVPoVnjc'],
         imgs: [ 
           { id: 1, img: paintProtection },
           { id: 2, img: paintProtection },
         ],
-        title3: '¿Qué colores manejan?',
-        title4: '¿Qué durabilidad tiene?',
-        details3: 'azul, humo y humo obscuro',
-        details4: '4 a 6 años dependiendo de la exposicion al sol',
       },
       colash: [
         { id: 1, img: paintProtection },
@@ -441,15 +427,11 @@ const initialState = {
             description: ['CLARO TU IMAGINACION ES EL LIMITE']
           }
         ],
-        video: ['https://www.youtube.com/embed/21wVZpgtDqg'],
+        video: ['https://www.youtube.com/embed/J23fPIIClCk'],
         imgs: [ 
           { id: 1, img: pinturaRines },
           { id: 2, img: pinturaRines },
         ],
-        title3: '¿Qué colores manejan?',
-        title4: '¿Qué durabilidad tiene?',
-        details3: 'azul, humo y humo obscuro',
-        details4: '4 a 6 años dependiendo de la exposicion al sol',
       },
       colash: [
         { id: 1, img: pinturaRines },
@@ -493,15 +475,11 @@ const initialState = {
             'Ahora bien un correcto lavado es utilizar máquinas a presión que puedan quitar la suciedad de manera más profunda, rápida y eficiente.','2. SECADO','Generalmente en este paso muchos utilizan el mismo trapo con el que lavaron pero bien exprimido o en algunas veces dejan que la carrocería se seque sola pero quedan las huellas del agua.','La manera correcta es utilizando toalla de microfibra, que absorben hasta 7 veces más que el algodón. Asimismo, una pistola de secado que permite correr el agua de las zonas más recónditas de nuestra carrocería','3.- DESCONTAMINADO','Esta técnica se realiza utilizando un material denominado “clay bar” o “barra de arcilla” que consiste en una resina sintética que se encarga de atrapar las diferentes partículas que se pueden encontrar en la pintura, esto se realiza luego de lavar y secar el vehículo.','Asimismo, esta arcilla también se puede pasar por cristales, plásticos y cromados.','4.- PULIDO','Llamado también “Polish” es un compuesto cremoso que contiene micro abrasivos, los cuales tienen la misión de eliminar las imperfecciones de nuestra pintura y le regresa el brillo pero debemos tomar en cuenta que no elimina los arañones profundos.','Si bien se puede hacer a mano, la mejor forma es con una máquina pulidora ya que obtenemos mejores resultados y más rápidos. No obstante, siempre es bueno que se realice por profesionales ya que sabrán qué tipo de “Polish” utilizar para eliminar esos pequeños rasguños.','5.- ENCERADO','Básicamente la cera es un componente que sirve como capa de protección para nuestra pintura así como para darle un brillo extra. La aplicación correcta es echar la cera en toda la carrocería (es mejor usar el color del auto), esperar que seque y luego se retira con una toalla de microfibra.','6.- ALFOMBRA Y CIELO','Deben de ser correctamente aspiradas y rociados con una solución que logre retirar las manchas.','7.- EL TABLERO','Debe limpiarse de la tierra e impurezas para luego rociar con silicona y tener una mayor protección contra la suciedad y rayos UV.','8.- PISOS','Dependiendo de cual tengamos, si fuera de jebe o de alfombras. En el primer caso el lavado es a presión con shampoo y el segundo una aspirada concienzuda para aplicarle una solución que quite manchas','9.- ASIENTOS','Ya sea que los tengamos de cuero (se le coloca un renovador, previamente una limpieza para quitarle las impurezas) y si fuera de tela (se aspira correctamente y se le pasa una esponja con agua y jabón especial para quitarle las manchas)','10.- PLASTICOS','Se procede con la limpieza previa para luego colocarles renovadores para mantener el brillo de los mismos.Para finalizar también se limpian las llantas con silicona y los aros con agua y shampoo.','¿Imaginas cómo quedará tu auto después de este proceso?','11.- PROCESO CERAMICO','Como último paso del auto detailing, se aplica la protección cerámica al automóvil. Esta es una base que protege la pintura del sol. Este recubrimiento cerámico es tan fuerte que sólo puede removerse a través de la abrasión. ','México ha incursionado en el car detailing durante los últimos años con mucho éxito, ya que nuestro país se caracteriza por ser un amante de los autos. Según cifras del IMCO, en 2017 el parque vehicular creció casi 5 veces más que la tasa de población, lo cual representa un área de oportunidad para los empresarios automovilísticos.']
           }
         ],
-        video: ['https://www.youtube.com/embed/21wVZpgtDqg'],
+        video: ['https://www.youtube.com/embed/BAjrqSyskfM'],
         imgs: [ 
           { id: 1, img: detailingAbout1 },
           { id: 2, img: detailingAbout2 },
         ],
-        title3: '¿Qué colores manejan?',
-        title4: '¿Qué durabilidad tiene?',
-        details3: 'azul, humo y humo obscuro',
-        details4: '4 a 6 años dependiendo de la exposicion al sol',
       },
       colash: [
         { id: 1, img: detalingColash1 },
@@ -554,11 +532,43 @@ const initialState = {
           { id: 1, img: sistemaEscape },
           { id: 2, img: sistemaEscape },
         ],
-        title3: '¿Qué colores manejan?',
-        title4: '¿Qué durabilidad tiene?',
-        details3: 'azul, humo y humo obscuro',
-        details4: '4 a 6 años dependiendo de la exposicion al sol',
+        titleColaborate: 'SISTEMAS DE ESCAPE',
+        detailColaborate: 'H & PERFORMANCE: busca tener las mejores marcas para atender la satisfacción de nuestros clientes, por tal razón hemos elegido trabajar con REMUS.'
       },
+      table: [
+        {
+          id: 1,
+          text: 'Vehículos que aplica',
+        },
+        {
+          id: 2,
+          text: 'Todos con restricciones por modelo y año del vehículo'
+        },
+        {
+          id: 3,
+          text: 'Instalación'
+        },
+        {
+          id: 4,
+          text: 'Si aplica'
+        },
+        {
+          id: 5,
+          text: 'Garantía'
+        },
+        {
+          id: 6,
+          text: 'Fabricante 6 meses'
+        },
+        {
+          id: 7,
+          text: 'Tiempo Aproximado de Instalación'
+        },
+        {
+          id: 8,
+          text: '2 a 24 horas según modelo'
+        }
+      ],
       colash: [
         { id: 1, img: sistemaEscape },
         { id: 2, img: sistemaEscape },
@@ -600,16 +610,48 @@ const initialState = {
             description: ['Garantía de por vida, según modelo. Aplican Restricciones, ver manual de fabricante.']
           }
         ],
-        video: ['https://www.youtube.com/embed/21wVZpgtDqg'],
+        video: ['https://www.youtube.com/embed/xBO2aoAVKS4'],
         imgs: [ 
           { id: 1, img: suspension },
           { id: 2, img: suspension },
         ],
-        title3: '¿Qué colores manejan?',
-        title4: '¿Qué durabilidad tiene?',
-        details3: 'azul, humo y humo obscuro',
-        details4: '4 a 6 años dependiendo de la exposicion al sol',
+        titleColaborate: 'SUSPENSIONES',
+        detailColaborate: 'H & PERFORMANCE: busca tener las mejores marcas para atender la satisfacción de nuestros clientes, por tal razón hemos elegido trabajar con EIBACH y BILSTEIN.'
       },
+      table: [
+        {
+          id: 1,
+          text: 'Vehículos que aplica',
+        },
+        {
+          id: 2,
+          text: 'Todos con restricciones por modelo y año del vehículo'
+        },
+        {
+          id: 3,
+          text: 'Instalación'
+        },
+        {
+          id: 4,
+          text: 'Si aplica'
+        },
+        {
+          id: 5,
+          text: 'Garantía'
+        },
+        {
+          id: 6,
+          text: '5 años / 100,000 kms directo con el fabricante BLISTEIN'
+        },
+        {
+          id: 7,
+          text: 'Tiempo Aproximado de Instalación'
+        },
+        {
+          id: 8,
+          text: '3 a 5 horas según modelo'
+        }
+      ],
       colash: [
         { id: 1, img: suspension },
         { id: 2, img: suspension },
@@ -656,16 +698,48 @@ const initialState = {
             description: ['Garantía limitada de 6 meses con el fabricante. Aplican Restricciones, ver manual de fabricante.']
           }
         ],
-        video: ['https://www.youtube.com/embed/21wVZpgtDqg'],
+        video: ['https://www.youtube.com/embed/OlwJwm_Kj_4'],
         imgs: [ 
           { id: 1, img: valvulas },
           { id: 2, img: valvulas },
         ],
-        title3: '¿Qué colores manejan?',
-        title4: '¿Qué durabilidad tiene?',
-        details3: 'azul, humo y humo obscuro',
-        details4: '4 a 6 años dependiendo de la exposicion al sol',
+        titleColaborate: 'Valvulas de alivio',
+        detailColaborate: 'H & PERFORMANCE: busca tener las mejores marcas para atender la satisfacción de nuestros clientes, por tal razón hemos elegido trabajar con FORGE.'
       },
+      table: [
+        {
+          id: 1,
+          text: 'Vehículos que aplica',
+        },
+        {
+          id: 2,
+          text: 'Todos con restricciones por modelo y año del vehículo, para motores con Turbo'
+        },
+        {
+          id: 3,
+          text: 'Instalación'
+        },
+        {
+          id: 4,
+          text: 'Si aplica'
+        },
+        {
+          id: 5,
+          text: 'Garantía'
+        },
+        {
+          id: 6,
+          text: 'Fabricante 6 meses'
+        },
+        {
+          id: 7,
+          text: 'Tiempo Aproximado de Instalación'
+        },
+        {
+          id: 8,
+          text: '1 a 3 horas según modelo'
+        }
+      ],
       colash: [
         { id: 1, img: valvulas },
         { id: 2, img: valvulas },
@@ -727,16 +801,46 @@ const initialState = {
             description: ['SE PUEDE LAVAR CON AGUA A PRESION ( KARCHER) O TRAPOS HUMEDOS','NUNCA METER A UN TUNELES Y/O ARCOS DE LAVADO']
           },
         ],
-        video: ['https://www.youtube.com/embed/21wVZpgtDqg',],
+        video: ['https://www.youtube.com/embed/_92LOSzMBfw',],
         imgs: [ 
           { id: 1, img: wrap },
           { id: 2, img: wrap },
         ],
-        title3: '¿Qué colores manejan?',
-        title4: '¿Qué durabilidad tiene?',
-        details3: 'azul, humo y humo obscuro',
-        details4: '4 a 6 años dependiendo de la exposicion al sol',
       },
+      table: [
+        {
+          id: 1,
+          text: 'Vehículos que aplica',
+        },
+        {
+          id: 2,
+          text: 'Todos con restricciones por modelo y año del vehículo, para motores con Turbo'
+        },
+        {
+          id: 3,
+          text: 'Instalación'
+        },
+        {
+          id: 4,
+          text: 'Si aplica'
+        },
+        {
+          id: 5,
+          text: 'Garantía'
+        },
+        {
+          id: 6,
+          text: 'Fabricante 6 meses'
+        },
+        {
+          id: 7,
+          text: 'Tiempo Aproximado de Instalación'
+        },
+        {
+          id: 8,
+          text: '1 a 3 horas según modelo'
+        }
+      ],
       colash: [
         { id: 1, img: wrap },
         { id: 2, img: wrap },

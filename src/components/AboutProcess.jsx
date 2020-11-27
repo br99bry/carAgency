@@ -62,6 +62,14 @@ const AboutProcess = ( {data , isVisibleAboutProcessPlusInformationIsActive} ) =
           <p> {data.details4} </p>
         </div>
       </div>
+      { data.titleColaborate ? 
+        <div className="AboutProcess__Colaborate">
+          <h1> {data.titleColaborate} </h1>
+          <p> {data.detailColaborate}  </p>
+        </div>
+        :
+        null
+      }
     </section>
     </>
   )
