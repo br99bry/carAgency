@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 import './styles/About.scss';
+import Footer from '../components/Footer';
 
 const About = ( {about} ) => {
   return (
@@ -27,6 +28,7 @@ const About = ( {about} ) => {
           </div>
         </div>
       </section>
+      <Footer />
     </>
   )
 } 

@@ -76,7 +76,7 @@ const Navbar = ( {navbar} ) =>{
                   </ul>         
                 </li>
                 <li onClick={ () => ( menuIsActive() ) } >
-                <Link to="/">
+                <Link to="/contacto">
                   {navbar.links[3]}
                 </Link>
                 </li>
@@ -117,7 +117,7 @@ const Navbar = ( {navbar} ) =>{
                 </ul>        
               </li>
               <li>
-              <Link to="/">
+              <Link to="/contacto">
                 {navbar.links[3]}
               </Link>
               </li>
@@ -127,7 +127,7 @@ const Navbar = ( {navbar} ) =>{
           <div className="NavbarWrapper__contactButton">
             <div id="button-n">
               <div id="slideN"></div>
-              <Link to="/" > 
+              <Link to="/contacto" > 
                 <span>{navbar.links[4]}</span>
                 {navbar.links[5]} 
               </Link>

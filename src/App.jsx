@@ -5,6 +5,7 @@ import './App.scss';
 import Layout from './components/Layout';
 import Home from './pages/Home';
 import About from './pages/About';
+import Contact from './pages/Contact';
 import InkingLights from './pages/InkingLights';
 import Aerodinamica from './pages/Aerodinamica';
 import Filtros from './pages/Filtros';
@@ -35,6 +36,14 @@ const App = () => {
             render={
               () => (
                 <About />
+              )
+            }
+          />
+          <Route
+            exact path='/contacto'
+            render={
+              () => (
+                <Contact />
               )
             }
           />

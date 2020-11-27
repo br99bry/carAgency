@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 import './styles/Aerodinamica.scss';
+import Footer from '../components/Footer';
 
 import HeroOneCar from '../components/HeroOneCar';
 import AboutWhitSliderDetails from '../components/AboutWhitSliderDetails';
@@ -17,6 +18,7 @@ const Aerodinamica = ( {hero,aboutSlider,aboutProcess,colash} ) => {
         <AboutProcess data={aboutProcess} isVisibleAboutProcessPlusInformationIsActive='none' />
         <Colash data={colash} />
       </div>
+      <Footer />
     </>
   )
 }

@@ -20,6 +20,9 @@ import suspension from './assets/img/suspension.jpg';
 import sistemaEscape from './assets/img/sistemaEscape.png';
 import valvulas from './assets/img/valvulas.jpg';
 import wrap from './assets/img/wrap.jpg';
+// imagenes de contacto seccion
+import contactHero from './assets/img/contactHero.JPG';
+
 // imagenes del servicio de fatos
 import farosHero from './assets/img/services/farosEntintados/farosHero.jpg';
 import farosslider1 from './assets/img/services/farosEntintados/slider1.jpg';
@@ -90,6 +93,19 @@ const initialState = {
       { id: 4, item: 'hola' },
       { id: 5, item: 'hola' }, 
     ]
+  },
+  contact: {
+    imgHero: contactHero,
+    decorate: aerodinamica,
+    title: 'Contactanos',
+    details: 'Somos la mejor opción en el mercado',
+    name: 'Nombre',
+    yourName: 'Tú nombre',
+    email: 'Correo',
+    yourEmail: 'correo@email.com',
+    message: 'Mensaje',
+    yourMessage: 'Tú Mensaje',
+    button: 'Enviar Mensaje'
   },
   services: {
     InkingLights:{

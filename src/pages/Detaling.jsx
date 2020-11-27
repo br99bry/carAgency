@@ -2,6 +2,7 @@ import React from 'react'
 import {connect} from 'react-redux';
 
 import './styles/Detaling.scss';
+import Footer from '../components/Footer';
 
 import HeroOneCar from '../components/HeroOneCar';
 import AboutWhitSliderDetails from '../components/AboutWhitSliderDetails';
@@ -18,6 +19,7 @@ const Detaling = ({hero,aboutSlider,aboutProcess,colash}) => {
         <AboutProcess data={aboutProcess} isVisibleAboutProcessPlusInformationIsActive='none' />
         <Colash data={colash} />
       </div>
+      <Footer />
     </>
   )
 }

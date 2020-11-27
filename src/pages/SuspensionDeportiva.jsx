@@ -2,6 +2,7 @@ import React from 'react'
 import {connect} from 'react-redux';
 
 import './styles/SuspensionDeportiva.scss';
+import Footer from '../components/Footer';
 
 import HeroOneCar from '../components/HeroOneCar';
 import AboutWhitSliderDetails from '../components/AboutWhitSliderDetails';
@@ -17,6 +18,7 @@ const SuspensionDeportiva = ({hero,aboutSlider,aboutProcess,colash}) => {
         <AboutWhitSliderDetails data={aboutSlider} />
         <AboutProcess data={aboutProcess} isVisibleAboutProcessPlusInformationIsActive='none' />
         <Colash data={colash} />
+        <Footer />
       </div>
     </>
   )
