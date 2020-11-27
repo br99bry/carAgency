@@ -10,6 +10,10 @@ const About = ( {about} ) => {
       <section className="About">
         <div className="About__hero-container">
           <img src={about.imgHero} alt="nosotros" className="About__hero"/>
+          <div>
+            <h1> Nosotros </h1>
+            <p> Inicio - Nosotros </p>
+          </div>
         </div>
         <div className="About__content">
           <div className="About__contendt-grid">

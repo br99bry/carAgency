@@ -10,6 +10,10 @@ const Contact = ( {contact} ) => {
       <section className="Contact">
         <div className="Contact__hero-container">
           <img src={contact.imgHero} alt="nosotros" className="Contact__hero"/>
+          <div>
+            <h1> Contacto </h1>
+            <p> Inicio - Contacto </p>
+          </div>
         </div>
         <div className="Contact__form">
           <h1> {contact.title} </h1>
